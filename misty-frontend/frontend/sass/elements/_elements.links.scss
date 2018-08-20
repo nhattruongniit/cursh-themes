@@ -6,5 +6,6 @@ a {
     &:hover,
     &:focus {
         color: $global-color-link-hover;
+        text-decoration: none !important;
     }
 }

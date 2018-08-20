@@ -1,5 +1,6 @@
 .c-header {
     border-top: 2px solid #f87617;
+    @include font-family(Montserrat);
 }
 
 .c-header__container {
@@ -10,4 +11,35 @@
 .c-header__topbar {
     display: flex;
     flex-direction: row-reverse;
+}
+
+.c-header__ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.c-header__li {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    &+& {
+        border-left: 1px solid #dddddd;
+    }
+    a {
+        font-size: 12px; 
+        span {
+            margin: 0 10px;
+            color:#686868;
+        }
+    }
+    i {
+        font-size: 14px;
+    }
+    &--languages {
+        img {
+            width: 22px;
+        }
+    }
 }

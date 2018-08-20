@@ -16,11 +16,8 @@
 // ELEMENTS
 @import "elements/elements.page";
 @import "elements/elements.headings";
-@import "elements/elements.label";
 @import "elements/elements.links";
 @import "elements/elements.images";
-@import "elements/elements.hr";
-@import "elements/elements.table";
 @import "elements/elements.input";
 
 // UTILITIES
@@ -40,7 +37,7 @@
 
 
 // COMPONENT
-@import "components/components.header";
-@import "components/components.footer";
+@import "components/_components.header";
+@import "components/_components.footer";
 
 

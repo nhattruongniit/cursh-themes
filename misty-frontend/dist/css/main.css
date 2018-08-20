@@ -501,34 +501,17 @@ h6 {
   font-size: 1rem;
   line-height: 1.5; }
 
-label {
-  font-weight: normal; }
-
 a {
   text-decoration: none;
   color: #434343;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #AEB9C4; }
+    color: #AEB9C4;
+    text-decoration: none !important; }
 
 img {
   max-width: 100%;
   vertical-align: middle; }
-
-hr {
-  height: 1px;
-  background: none;
-  border: none;
-  border-top: 1px solid #DEE1E4;
-  margin: 24px 0; }
-
-table {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-  table td, table th {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
 
 input {
   outline: none;
@@ -552,7 +535,7 @@ input, textarea, select, button {
   font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
 .u-text--en {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+  font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
 .u-text--bold {
   font-weight: bold !important; }
@@ -1381,7 +1364,8 @@ input, textarea, select, button {
   max-width: 1170px; }
 
 .c-header {
-  border-top: 2px solid #f87617; }
+  border-top: 2px solid #f87617;
+  font-family: "Montserrat",  Helvetica, Arial, sans-serif; }
 
 .c-header__container {
   display: -webkit-box;
@@ -1399,3 +1383,33 @@ input, textarea, select, button {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
+
+.c-header__ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0; }
+
+.c-header__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px; }
+  .c-header__li + .c-header__li {
+    border-left: 1px solid #dddddd; }
+  .c-header__li a {
+    font-size: 12px; }
+    .c-header__li a span {
+      margin: 0 10px;
+      color: #686868; }
+  .c-header__li i {
+    font-size: 14px; }
+  .c-header__li--languages img {
+    width: 22px; }
