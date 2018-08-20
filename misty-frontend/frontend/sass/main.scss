@@ -16,9 +16,7 @@
 // ELEMENTS
 @import "elements/elements.page";
 @import "elements/elements.headings";
-@import "elements/elements.links";
 @import "elements/elements.images";
-@import "elements/elements.input";
 
 // UTILITIES
 @import "utilities/utilities.text";
@@ -32,12 +30,9 @@
 @import "utilities/utilities.vertical";
 @import "utilities/utilities.height";
 
-// OBJECT
-@import "objects/objects.container";
-
-
 // COMPONENT
 @import "components/_components.header";
 @import "components/_components.footer";
+@import "components/_components.fa";
 
 

@@ -1,33 +1,86 @@
 .c-header
     .o-container.container
-        .c-header__container
-            .c-header__logo
-                a(href="")
-                    img(src="../images/logo.png", title="Logo Misty" alt="Logo Misty")
-            .c-header__bar
-                .c-header__topbar
-                    ul.c-header__ul
-                        li.c-header__li.c-header__li--wishlist
-                            a(href="javascript:;") 
-                                i.fa.fa-heart
-                                span 
-                                    b Wish List (3)
-                        li.c-header__li.c-header__li--account
-                            a(href="javascript:;") 
-                                i.fa.fa-user
-                                span My Account
-                        li.c-header__li.c-header__li--signin
-                            a(href="javascript:;") 
-                                i.fa.fa-unlock-alt
-                                span Sign in
-                        li.c-header__li.c-header__li--currency
-                            a(href="javascript:;") 
-                                i.fa.fa-dollar
-                                span USD
-                                i.fa.fa-angle-down
-                        li.c-header__li.c-header__li--languages
-                            a(href="javascript:;") 
-                                img(src="../images/img-flag-en.jpg", title="Flag EN", alt="Flag EN")
-                                span EN
-                                i.fa.fa-angle-down
-                .c-header__menu this is menu
+        .row
+            .c-header__container
+                .c-header__logo
+                    a(href="")
+                        img(src="../images/logo.png", title="Logo Misty" alt="Logo Misty")
+                .c-header__bar
+                    .c-header__topbar
+                        ul.c-header__ul
+                            li.c-header__li
+                                a(href="javascript:;") 
+                                    i.c-fa--green.fa.fa-search
+                            li.c-header__li.c-header__li--wishlist
+                                a(href="javascript:;") 
+                                    i.c-fa--pink.fa.fa-heart
+                                    span Wish List (3)
+                            li.c-header__li
+                                a(href="javascript:;") 
+                                    i.c-fa--green.fa.fa-user
+                                    span My Account
+                            li.c-header__li
+                                a(href="javascript:;") 
+                                    i.c-fa--green.fa.fa-unlock-alt
+                                    span Sign in
+                            li.c-header__li
+                                a(href="javascript:;") 
+                                    i.fa.fa-dollar
+                                    span USD
+                                    i.fa.fa-angle-down
+                                ul.c-header__submenu.c-sub-menu--line.c-sub-menu--shadow
+                                    li 
+                                        a.active(href="#") USD
+                                    li 
+                                        a(href="#") EUR
+                                    li 
+                                        a(href="#") USD
+                            li.c-header__li.c-header__li--languages
+                                a(href="javascript:;") 
+                                    img(src="../images/img-flag-en.jpg", title="Flag EN", alt="Flag EN")
+                                    span EN
+                                    i.fa.fa-angle-down
+                                ul.c-header__submenu
+                                    li 
+                                        a.active(href="#") English
+                                    li 
+                                        a(href="#") France
+                                    li 
+                                        a(href="#") Vietnam
+                    .c-header__bottombar
+                        .c-header__mega
+                            ul.c-header__mega__ul
+                                li.c-header__mega__li
+                                    a(href="#") 
+                                        span Home
+                                        i.fa.fa-angle-down
+                                    ul.c-header__mega__submenu.c-header__mega__submenu--home
+                                        li 
+                                            a.active(href="#") Home page v1
+                                        li 
+                                            a(href="#") Home page v2
+                                        li 
+                                            a(href="#") Home page v3
+                                li.c-header__mega__li
+                                    a(href="#") 
+                                        span Mega Menu
+                                        i.fa.fa-angle-down
+                                li.c-header__mega__li
+                                    a(href="#") 
+                                        span Shop Page
+                                        i.fa.fa-angle-down
+                                li.c-header__mega__li
+                                    a(href="#") 
+                                        span Blog
+                                        i.fa.fa-angle-down
+                                li.c-header__mega__li
+                                    a(href="#") 
+                                        span Lookbook
+                                li.c-header__mega__li
+                                    a(href="#") 
+                                        span Buy template
+                        .c-header__cart
+                            i.fa.fa-shopping-basket
+                            .c-header__cart--number 3
+
+

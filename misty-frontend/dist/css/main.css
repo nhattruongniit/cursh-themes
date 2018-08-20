@@ -468,6 +468,17 @@ body {
   color: inherit;
   height: 100%; }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  color: #686868; }
+  a:hover {
+    text-decoration: none;
+    color: #686868; }
+
 /* ==========================================================================
    #HEADINGS
    ========================================================================== */
@@ -501,35 +512,9 @@ h6 {
   font-size: 1rem;
   line-height: 1.5; }
 
-a {
-  text-decoration: none;
-  color: #434343;
-  cursor: pointer; }
-  a:hover, a:focus {
-    color: #AEB9C4;
-    text-decoration: none !important; }
-
 img {
   max-width: 100%;
   vertical-align: middle; }
-
-input {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
-
-input, textarea, select, button {
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0;
-  text-shadow: none;
-  display: inline-block;
-  text-align: start; }
-  input:active, input:focus, textarea:active, textarea:focus, select:active, select:focus, button:active, button:focus {
-    outline: none;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
 
 .u-text--jp {
   font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
@@ -1359,15 +1344,18 @@ input, textarea, select, button {
 .u-height--full {
   height: 100%; }
 
-.o-container {
-  padding: 0;
-  max-width: 1170px; }
-
+/*
+==========================================================================
+   START HEADER COMPONENT
+==========================================================================
+*/
 .c-header {
+  font-family: "Montserrat",  Helvetica, Arial, sans-serif;
   border-top: 2px solid #f87617;
-  font-family: "Montserrat",  Helvetica, Arial, sans-serif; }
+  padding: 15px 0 0 0; }
 
 .c-header__container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1382,7 +1370,20 @@ input, textarea, select, button {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse; }
+          flex-direction: row-reverse;
+  border-bottom: 1px solid #fafafa;
+  padding-bottom: 15px;
+  margin-bottom: 15px; }
+
+.c-header__bottombar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 20px; }
 
 .c-header__ul {
   list-style: none;
@@ -1395,6 +1396,7 @@ input, textarea, select, button {
   margin: 0; }
 
 .c-header__li {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1402,14 +1404,125 @@ input, textarea, select, button {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 10px; }
+  .c-header__li:hover ul {
+    opacity: 1;
+    visibility: visible; }
   .c-header__li + .c-header__li {
     border-left: 1px solid #dddddd; }
-  .c-header__li a {
-    font-size: 12px; }
-    .c-header__li a span {
-      margin: 0 10px;
-      color: #686868; }
   .c-header__li i {
     font-size: 14px; }
+  .c-header__li span {
+    margin: 0 10px;
+    color: #686868;
+    font-size: 12px; }
   .c-header__li--languages img {
     width: 22px; }
+  .c-header__li--wishlist span {
+    font-weight: bold;
+    color: #010101; }
+
+.c-header__submenu {
+  width: 140px;
+  padding: 0 10px;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border-bottom: 2px solid #ef4b69;
+  -webkit-box-shadow: 0px 3px 18px -5px #000;
+          box-shadow: 0px 3px 18px -5px #000; }
+  .c-header__submenu li {
+    border-bottom: 1px solid #f5f5f5;
+    padding: 5px 0; }
+    .c-header__submenu li a {
+      font-size: 12px; }
+      .c-header__submenu li a.active, .c-header__submenu li a:hover {
+        color: #6cc111; }
+
+.c-header__mega {
+  font-size: 14px;
+  font-weight: bold; }
+
+.c-header__mega__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+.c-header__mega__li {
+  position: relative; }
+  .c-header__mega__li + li {
+    margin-left: 50px; }
+  .c-header__mega__li a span {
+    margin-right: 10px; }
+
+.c-header__mega__submenu {
+  border-bottom: 2px solid #ef4b69;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 3px 18px -5px #000;
+          box-shadow: 0px 3px 18px -5px #000;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0); }
+  .c-header__mega__submenu li {
+    border-bottom: 1px solid #f5f5f5;
+    padding: 15px 0; }
+    .c-header__mega__submenu li a {
+      font-weight: normal; }
+      .c-header__mega__submenu li a.active, .c-header__mega__submenu li a:hover {
+        color: #ef4b69; }
+  .c-header__mega__submenu--home {
+    width: 210px;
+    padding: 0 20px; }
+
+.c-header__cart {
+  position: relative;
+  margin-left: 50px; }
+  .c-header__cart--number {
+    position: absolute;
+    z-index: 1;
+    top: -11px;
+    left: 10px;
+    background-color: #ef4b69;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 13px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center; }
+
+/*
+==========================================================================
+   END HEADER COMPONENT
+==========================================================================
+*/
+/*
+==========================================================================
+   START FA (FONTAWESOME) COMPONENT
+==========================================================================
+*/
+.fa {
+  color: #686868; }
+
+.c-fa--pink {
+  color: #ef4b69; }
+
+.c-fa--green {
+  color: #6cc111; }
+
+/*
+==========================================================================
+   END FA (FONTAWESOME) COMPONENT
+==========================================================================
+*/
