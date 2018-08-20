@@ -1,0 +1,12 @@
+html {
+    font-size: $global-font-size; /* [1] */
+    line-height: $global-line-height / $global-font-size !important; /* [1] */
+    overflow-y: scroll; /* [2] */
+    min-height: 100%; /* [3] */
+    height: 100%;
+}
+
+body {
+    color: inherit;
+    height: 100%;
+}

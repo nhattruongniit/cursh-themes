@@ -1,0 +1,18 @@
+// @font-face {
+//     font-family: 'SFU Eurostile';
+//     src: url('../fonts/SFUEurostileBold.eot');
+//     src: url('../fonts/SFUEurostileBold.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/SFUEurostileBold.woff2') format('woff2'),
+//         url('../fonts/SFUEurostileBold.woff') format('woff'),
+//         url('../fonts/SFUEurostileBold.ttf') format('truetype'),
+//         url('../fonts/SFUEurostileBold.svg#SFUEurostileBold') format('svg');
+// }
+
+
+@mixin font-family($locale){
+    @if ($locale == 'en') {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    } @else {
+        font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    }
+}

@@ -1,0 +1,13 @@
+.c-header {
+    border-top: 2px solid #f87617;
+}
+
+.c-header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-header__topbar {
+    display: flex;
+    flex-direction: row-reverse;
+}
