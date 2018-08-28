@@ -466,7 +466,8 @@ html {
 
 body {
   color: inherit;
-  height: 100%; }
+  height: 100%;
+  color: #686868; }
 
 ul {
   margin: 0;
@@ -477,11 +478,13 @@ a {
   color: #686868; }
   a:hover {
     text-decoration: none;
-    color: #686868; }
+    color: inherit; }
 
-/* ==========================================================================
-   #HEADINGS
-   ========================================================================== */
+/*
+==========================================================================
+   START HEADING ELEMENTS
+==========================================================================
+*/
 h1 {
   font-size: 36px;
   font-size: 2.25rem;
@@ -512,845 +515,18 @@ h6 {
   font-size: 1rem;
   line-height: 1.5; }
 
-img {
-  max-width: 100%;
-  vertical-align: middle; }
-
-.u-text--jp {
-  font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
-
-.u-text--en {
-  font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
-
-.u-text--bold {
-  font-weight: bold !important; }
-
-.u-text--medium {
-  font-weight: 500 !important; }
-
-.u-text--size-20 {
-  font-size: 20px !important; }
-
-.u-text--size-18 {
-  font-size: 18px !important; }
-
-.u-text--size-16 {
-  font-size: 16px !important; }
-
-.u-text--size-15 {
-  font-size: 15px !important; }
-
-.u-text--size-14 {
-  font-size: 14px !important; }
-
-.u-text--left {
-  text-align: left !important; }
-
-.u-text--right {
-  text-align: right !important; }
-
-.u-text--center {
-  text-align: center !important; }
-
-.u-text--truncate {
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  -o-text-overflow: ellipsis !important;
-     text-overflow: ellipsis !important; }
-
-.u-text--hidden {
-  font-size: 0 !important; }
-
-.u-text--fit {
-  line-height: 1 !important; }
-
-.u-text--underline {
-  text-decoration: underline !important; }
-
-.u-text--clickable {
-  cursor: pointer; }
-
-.u-cursor--pointer {
-  cursor: pointer; }
-
-.u-display--block {
-  display: block !important; }
-
-.u-display--inline {
-  display: inline !important; }
-
-.u-display--inline-block {
-  display: inline-block !important; }
-
-.u-float--left {
-  float: left; }
-
-.u-float--right {
-  float: right; }
-
-/* ==========================================================================
-   #CLEARFIX
-   ========================================================================== */
-/**
- * Attach our clearfix mixin to a utility class.
- */
-.u-clearfix:after {
-  content: "" !important;
-  display: block !important;
-  clear: both !important; }
-
-/* ==========================================================================
-   #SPACINGS
-   ========================================================================== */
-/**
- * Utility classes to put specific spacing values onto elements. The below loop
- * will generate us a suite of classes like:
- *
- *   .u-margin-top {}
- *   .u-padding-left-large {}
- *   .u-margin-right-small {}
- *   .u-padding {}
- *   .u-padding-right-none {}
- *   .u-padding-horizontal {}
- *   .u-padding-vertical-small {}
- */
-/* stylelint-disable string-quotes */
-.u-padding {
-  padding: 24px !important; }
-
-.u-padding-base {
-  padding: 8px !important; }
-
-.u-padding-tiny {
-  padding: 6px !important; }
-
-.u-padding-small {
-  padding: 12px !important; }
-
-.u-padding-large {
-  padding: 48px !important; }
-
-.u-padding-extra-large {
-  padding: 72px !important; }
-
-.u-padding-huge {
-  padding: 96px !important; }
-
-.u-padding-extra-huge {
-  padding: 120px !important; }
-
-.u-padding-none {
-  padding: 0 !important; }
-
-.u-padding-top {
-  padding-top: 24px !important; }
-
-.u-padding-top-base {
-  padding-top: 8px !important; }
-
-.u-padding-top-tiny {
-  padding-top: 6px !important; }
-
-.u-padding-top-small {
-  padding-top: 12px !important; }
-
-.u-padding-top-large {
-  padding-top: 48px !important; }
-
-.u-padding-top-extra-large {
-  padding-top: 72px !important; }
-
-.u-padding-top-huge {
-  padding-top: 96px !important; }
-
-.u-padding-top-extra-huge {
-  padding-top: 120px !important; }
-
-.u-padding-top-none {
-  padding-top: 0 !important; }
-
-.u-padding-right {
-  padding-right: 24px !important; }
-
-.u-padding-right-base {
-  padding-right: 8px !important; }
-
-.u-padding-right-tiny {
-  padding-right: 6px !important; }
-
-.u-padding-right-small {
-  padding-right: 12px !important; }
-
-.u-padding-right-large {
-  padding-right: 48px !important; }
-
-.u-padding-right-extra-large {
-  padding-right: 72px !important; }
-
-.u-padding-right-huge {
-  padding-right: 96px !important; }
-
-.u-padding-right-extra-huge {
-  padding-right: 120px !important; }
-
-.u-padding-right-none {
-  padding-right: 0 !important; }
-
-.u-padding-bottom {
-  padding-bottom: 24px !important; }
-
-.u-padding-bottom-base {
-  padding-bottom: 8px !important; }
-
-.u-padding-bottom-tiny {
-  padding-bottom: 6px !important; }
-
-.u-padding-bottom-small {
-  padding-bottom: 12px !important; }
-
-.u-padding-bottom-large {
-  padding-bottom: 48px !important; }
-
-.u-padding-bottom-extra-large {
-  padding-bottom: 72px !important; }
-
-.u-padding-bottom-huge {
-  padding-bottom: 96px !important; }
-
-.u-padding-bottom-extra-huge {
-  padding-bottom: 120px !important; }
-
-.u-padding-bottom-none {
-  padding-bottom: 0 !important; }
-
-.u-padding-left {
-  padding-left: 24px !important; }
-
-.u-padding-left-base {
-  padding-left: 8px !important; }
-
-.u-padding-left-tiny {
-  padding-left: 6px !important; }
-
-.u-padding-left-small {
-  padding-left: 12px !important; }
-
-.u-padding-left-large {
-  padding-left: 48px !important; }
-
-.u-padding-left-extra-large {
-  padding-left: 72px !important; }
-
-.u-padding-left-huge {
-  padding-left: 96px !important; }
-
-.u-padding-left-extra-huge {
-  padding-left: 120px !important; }
-
-.u-padding-left-none {
-  padding-left: 0 !important; }
-
-.u-padding-horizontal {
-  padding-left: 24px !important;
-  padding-right: 24px !important; }
-
-.u-padding-horizontal-base {
-  padding-left: 8px !important;
-  padding-right: 8px !important; }
-
-.u-padding-horizontal-tiny {
-  padding-left: 6px !important;
-  padding-right: 6px !important; }
-
-.u-padding-horizontal-small {
-  padding-left: 12px !important;
-  padding-right: 12px !important; }
-
-.u-padding-horizontal-large {
-  padding-left: 48px !important;
-  padding-right: 48px !important; }
-
-.u-padding-horizontal-extra-large {
-  padding-left: 72px !important;
-  padding-right: 72px !important; }
-
-.u-padding-horizontal-huge {
-  padding-left: 96px !important;
-  padding-right: 96px !important; }
-
-.u-padding-horizontal-extra-huge {
-  padding-left: 120px !important;
-  padding-right: 120px !important; }
-
-.u-padding-horizontal-none {
-  padding-left: 0 !important;
-  padding-right: 0 !important; }
-
-.u-padding-vertical {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important; }
-
-.u-padding-vertical-base {
-  padding-top: 8px !important;
-  padding-bottom: 8px !important; }
-
-.u-padding-vertical-tiny {
-  padding-top: 6px !important;
-  padding-bottom: 6px !important; }
-
-.u-padding-vertical-small {
-  padding-top: 12px !important;
-  padding-bottom: 12px !important; }
-
-.u-padding-vertical-large {
-  padding-top: 48px !important;
-  padding-bottom: 48px !important; }
-
-.u-padding-vertical-extra-large {
-  padding-top: 72px !important;
-  padding-bottom: 72px !important; }
-
-.u-padding-vertical-huge {
-  padding-top: 96px !important;
-  padding-bottom: 96px !important; }
-
-.u-padding-vertical-extra-huge {
-  padding-top: 120px !important;
-  padding-bottom: 120px !important; }
-
-.u-padding-vertical-none {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important; }
-
-.u-margin {
-  margin: 24px !important; }
-
-.u-margin-base {
-  margin: 8px !important; }
-
-.u-margin-tiny {
-  margin: 6px !important; }
-
-.u-margin-small {
-  margin: 12px !important; }
-
-.u-margin-large {
-  margin: 48px !important; }
-
-.u-margin-extra-large {
-  margin: 72px !important; }
-
-.u-margin-huge {
-  margin: 96px !important; }
-
-.u-margin-extra-huge {
-  margin: 120px !important; }
-
-.u-margin-none {
-  margin: 0 !important; }
-
-.u-margin-top {
-  margin-top: 24px !important; }
-
-.u-margin-top-base {
-  margin-top: 8px !important; }
-
-.u-margin-top-tiny {
-  margin-top: 6px !important; }
-
-.u-margin-top-small {
-  margin-top: 12px !important; }
-
-.u-margin-top-large {
-  margin-top: 48px !important; }
-
-.u-margin-top-extra-large {
-  margin-top: 72px !important; }
-
-.u-margin-top-huge {
-  margin-top: 96px !important; }
-
-.u-margin-top-extra-huge {
-  margin-top: 120px !important; }
-
-.u-margin-top-none {
-  margin-top: 0 !important; }
-
-.u-margin-right {
-  margin-right: 24px !important; }
-
-.u-margin-right-base {
-  margin-right: 8px !important; }
-
-.u-margin-right-tiny {
-  margin-right: 6px !important; }
-
-.u-margin-right-small {
-  margin-right: 12px !important; }
-
-.u-margin-right-large {
-  margin-right: 48px !important; }
-
-.u-margin-right-extra-large {
-  margin-right: 72px !important; }
-
-.u-margin-right-huge {
-  margin-right: 96px !important; }
-
-.u-margin-right-extra-huge {
-  margin-right: 120px !important; }
-
-.u-margin-right-none {
-  margin-right: 0 !important; }
-
-.u-margin-bottom {
-  margin-bottom: 24px !important; }
-
-.u-margin-bottom-base {
-  margin-bottom: 8px !important; }
-
-.u-margin-bottom-tiny {
-  margin-bottom: 6px !important; }
-
-.u-margin-bottom-small {
-  margin-bottom: 12px !important; }
-
-.u-margin-bottom-large {
-  margin-bottom: 48px !important; }
-
-.u-margin-bottom-extra-large {
-  margin-bottom: 72px !important; }
-
-.u-margin-bottom-huge {
-  margin-bottom: 96px !important; }
-
-.u-margin-bottom-extra-huge {
-  margin-bottom: 120px !important; }
-
-.u-margin-bottom-none {
-  margin-bottom: 0 !important; }
-
-.u-margin-left {
-  margin-left: 24px !important; }
-
-.u-margin-left-base {
-  margin-left: 8px !important; }
-
-.u-margin-left-tiny {
-  margin-left: 6px !important; }
-
-.u-margin-left-small {
-  margin-left: 12px !important; }
-
-.u-margin-left-large {
-  margin-left: 48px !important; }
-
-.u-margin-left-extra-large {
-  margin-left: 72px !important; }
-
-.u-margin-left-huge {
-  margin-left: 96px !important; }
-
-.u-margin-left-extra-huge {
-  margin-left: 120px !important; }
-
-.u-margin-left-none {
-  margin-left: 0 !important; }
-
-.u-margin-horizontal {
-  margin-left: 24px !important;
-  margin-right: 24px !important; }
-
-.u-margin-horizontal-base {
-  margin-left: 8px !important;
-  margin-right: 8px !important; }
-
-.u-margin-horizontal-tiny {
-  margin-left: 6px !important;
-  margin-right: 6px !important; }
-
-.u-margin-horizontal-small {
-  margin-left: 12px !important;
-  margin-right: 12px !important; }
-
-.u-margin-horizontal-large {
-  margin-left: 48px !important;
-  margin-right: 48px !important; }
-
-.u-margin-horizontal-extra-large {
-  margin-left: 72px !important;
-  margin-right: 72px !important; }
-
-.u-margin-horizontal-huge {
-  margin-left: 96px !important;
-  margin-right: 96px !important; }
-
-.u-margin-horizontal-extra-huge {
-  margin-left: 120px !important;
-  margin-right: 120px !important; }
-
-.u-margin-horizontal-none {
-  margin-left: 0 !important;
-  margin-right: 0 !important; }
-
-.u-margin-vertical {
-  margin-top: 24px !important;
-  margin-bottom: 24px !important; }
-
-.u-margin-vertical-base {
-  margin-top: 8px !important;
-  margin-bottom: 8px !important; }
-
-.u-margin-vertical-tiny {
-  margin-top: 6px !important;
-  margin-bottom: 6px !important; }
-
-.u-margin-vertical-small {
-  margin-top: 12px !important;
-  margin-bottom: 12px !important; }
-
-.u-margin-vertical-large {
-  margin-top: 48px !important;
-  margin-bottom: 48px !important; }
-
-.u-margin-vertical-extra-large {
-  margin-top: 72px !important;
-  margin-bottom: 72px !important; }
-
-.u-margin-vertical-huge {
-  margin-top: 96px !important;
-  margin-bottom: 96px !important; }
-
-.u-margin-vertical-extra-huge {
-  margin-top: 120px !important;
-  margin-bottom: 120px !important; }
-
-.u-margin-vertical-none {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important; }
-
-.u-padding-2x {
-  padding: 16px !important; }
-
-.u-padding-3x {
-  padding: 24px !important; }
-
-.u-padding-4x {
-  padding: 32px !important; }
-
-.u-padding-5x {
-  padding: 40px !important; }
-
-.u-padding-6x {
-  padding: 48px !important; }
-
-.u-padding-top-2x {
-  padding-top: 16px !important; }
-
-.u-padding-top-3x {
-  padding-top: 24px !important; }
-
-.u-padding-top-4x {
-  padding-top: 32px !important; }
-
-.u-padding-top-5x {
-  padding-top: 40px !important; }
-
-.u-padding-top-6x {
-  padding-top: 48px !important; }
-
-.u-padding-right-2x {
-  padding-right: 16px !important; }
-
-.u-padding-right-3x {
-  padding-right: 24px !important; }
-
-.u-padding-right-4x {
-  padding-right: 32px !important; }
-
-.u-padding-right-5x {
-  padding-right: 40px !important; }
-
-.u-padding-right-6x {
-  padding-right: 48px !important; }
-
-.u-padding-bottom-2x {
-  padding-bottom: 16px !important; }
-
-.u-padding-bottom-3x {
-  padding-bottom: 24px !important; }
-
-.u-padding-bottom-4x {
-  padding-bottom: 32px !important; }
-
-.u-padding-bottom-5x {
-  padding-bottom: 40px !important; }
-
-.u-padding-bottom-6x {
-  padding-bottom: 48px !important; }
-
-.u-padding-left-2x {
-  padding-left: 16px !important; }
-
-.u-padding-left-3x {
-  padding-left: 24px !important; }
-
-.u-padding-left-4x {
-  padding-left: 32px !important; }
-
-.u-padding-left-5x {
-  padding-left: 40px !important; }
-
-.u-padding-left-6x {
-  padding-left: 48px !important; }
-
-.u-padding-horizontal-2x {
-  padding-left: 16px !important;
-  padding-right: 16px !important; }
-
-.u-padding-horizontal-3x {
-  padding-left: 24px !important;
-  padding-right: 24px !important; }
-
-.u-padding-horizontal-4x {
-  padding-left: 32px !important;
-  padding-right: 32px !important; }
-
-.u-padding-horizontal-5x {
-  padding-left: 40px !important;
-  padding-right: 40px !important; }
-
-.u-padding-horizontal-6x {
-  padding-left: 48px !important;
-  padding-right: 48px !important; }
-
-.u-padding-vertical-2x {
-  padding-top: 16px !important;
-  padding-bottom: 16px !important; }
-
-.u-padding-vertical-3x {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important; }
-
-.u-padding-vertical-4x {
-  padding-top: 32px !important;
-  padding-bottom: 32px !important; }
-
-.u-padding-vertical-5x {
-  padding-top: 40px !important;
-  padding-bottom: 40px !important; }
-
-.u-padding-vertical-6x {
-  padding-top: 48px !important;
-  padding-bottom: 48px !important; }
-
-.u-margin-2x {
-  margin: 16px !important; }
-
-.u-margin-3x {
-  margin: 24px !important; }
-
-.u-margin-4x {
-  margin: 32px !important; }
-
-.u-margin-5x {
-  margin: 40px !important; }
-
-.u-margin-6x {
-  margin: 48px !important; }
-
-.u-margin-top-2x {
-  margin-top: 16px !important; }
-
-.u-margin-top-3x {
-  margin-top: 24px !important; }
-
-.u-margin-top-4x {
-  margin-top: 32px !important; }
-
-.u-margin-top-5x {
-  margin-top: 40px !important; }
-
-.u-margin-top-6x {
-  margin-top: 48px !important; }
-
-.u-margin-right-2x {
-  margin-right: 16px !important; }
-
-.u-margin-right-3x {
-  margin-right: 24px !important; }
-
-.u-margin-right-4x {
-  margin-right: 32px !important; }
-
-.u-margin-right-5x {
-  margin-right: 40px !important; }
-
-.u-margin-right-6x {
-  margin-right: 48px !important; }
-
-.u-margin-bottom-2x {
-  margin-bottom: 16px !important; }
-
-.u-margin-bottom-3x {
-  margin-bottom: 24px !important; }
-
-.u-margin-bottom-4x {
-  margin-bottom: 32px !important; }
-
-.u-margin-bottom-5x {
-  margin-bottom: 40px !important; }
-
-.u-margin-bottom-6x {
-  margin-bottom: 48px !important; }
-
-.u-margin-left-2x {
-  margin-left: 16px !important; }
-
-.u-margin-left-3x {
-  margin-left: 24px !important; }
-
-.u-margin-left-4x {
-  margin-left: 32px !important; }
-
-.u-margin-left-5x {
-  margin-left: 40px !important; }
-
-.u-margin-left-6x {
-  margin-left: 48px !important; }
-
-.u-margin-horizontal-2x {
-  margin-left: 16px !important;
-  margin-right: 16px !important; }
-
-.u-margin-horizontal-3x {
-  margin-left: 24px !important;
-  margin-right: 24px !important; }
-
-.u-margin-horizontal-4x {
-  margin-left: 32px !important;
-  margin-right: 32px !important; }
-
-.u-margin-horizontal-5x {
-  margin-left: 40px !important;
-  margin-right: 40px !important; }
-
-.u-margin-horizontal-6x {
-  margin-left: 48px !important;
-  margin-right: 48px !important; }
-
-.u-margin-vertical-2x {
-  margin-top: 16px !important;
-  margin-bottom: 16px !important; }
-
-.u-margin-vertical-3x {
-  margin-top: 24px !important;
-  margin-bottom: 24px !important; }
-
-.u-margin-vertical-4x {
-  margin-top: 32px !important;
-  margin-bottom: 32px !important; }
-
-.u-margin-vertical-5x {
-  margin-top: 40px !important;
-  margin-bottom: 40px !important; }
-
-.u-margin-vertical-6x {
-  margin-top: 48px !important;
-  margin-bottom: 48px !important; }
-
-/* stylelint-enable string-quotes */
-/* ==========================================================================
-   #PRINT
-   ========================================================================== */
-/**
- * Very crude, reset-like styles taken from the HTML5 Boilerplate:
- * https://github.com/h5bp/html5-boilerplate/blob/5.3.0/dist/doc/css.md#print-styles
- * https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css#L205-L282
- */
-@media print {
-  /**
-   * 1. Black prints faster: http://www.sanbeiji.com/archives/953
-   */
-  *,
-  *:before,
-  *:after,
-  *:first-letter,
-  *:first-line {
-    background: transparent !important;
-    color: #000 !important;
-    /* [1] */
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-    text-shadow: none !important; }
-  a,
-  a:visited {
-    text-decoration: underline; }
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-  /**
-   * Don't show links that are fragment identifiers, or use the `javascript:`
-   * pseudo protocol.
-   */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: ""; }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-  /**
-   * Printing Tables: http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group; }
-  tr,
-  img {
-    page-break-inside: avoid; }
-  img {
-    max-width: 100% !important; }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-  h2,
-  h3 {
-    page-break-after: avoid; } }
-
-/* ==========================================================================
-   #HIDE
-   ========================================================================== */
-/**
- * Hide visually and from screen readers.
- */
-.u-hidden {
-  display: none !important; }
-
-.u-vertical--base {
-  vertical-align: baseline !important; }
-
-.u-vertical--top {
-  vertical-align: top !important; }
-
-.u-vertical--middle {
-  vertical-align: middle !important; }
-
-.u-vertical--bottom {
-  vertical-align: bottom !important; }
-
-.u-height--full {
-  height: 100%; }
-
+/*
+==========================================================================
+   END HEADING ELEMENTS
+==========================================================================
+*/
 /*
 ==========================================================================
    START HEADER COMPONENT
 ==========================================================================
 */
 .c-header {
-  font-family: "Montserrat",  Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   border-top: 2px solid #f87617;
   padding: 15px 0 0 0; }
 
@@ -1493,6 +669,8 @@ img {
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   z-index: 2;
+  opacity: 0;
+  visibility: hidden;
   background-color: #fff;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
@@ -1500,23 +678,24 @@ img {
   border-bottom: 2px solid #ef4b69;
   -webkit-box-shadow: 0px 3px 18px -5px #000;
   box-shadow: 0px 3px 18px -5px #000; }
-  .c-mega-menu--hover:hover .c-mega-menu {
+  .c-mega-menu--hover:hover > .c-mega-menu {
     opacity: 1;
     visibility: visible; }
 
 .c-mega-menu__sub {
   font-weight: normal;
-  padding: 20px 20px 35px;
+  padding: 20px 20px 20px;
   font-size: 14px; }
   .c-mega-menu__sub .c-mega-menu__li {
     border-bottom: 1px solid #f5f5f5;
-    padding: 10px;
+    padding: 13px 10px;
     color: #686868; }
     .c-mega-menu__sub .c-mega-menu__li--noline {
       border-bottom: 0; }
 
 .c-mega-menu__li {
-  padding: 5px 15px; }
+  padding: 8px 15px;
+  font-size: 14px; }
   .c-mega-menu__li--noline {
     border-bottom: 0px; }
   .c-mega-menu__li a {
@@ -1530,7 +709,7 @@ img {
   padding: 5px 0 15px 0; }
 
 .c-mega-menu__currency {
-  width: 210px;
+  width: 230px;
   padding: 5px 0 15px 0; }
 
 .c-mega-menu__home {
@@ -1539,8 +718,26 @@ img {
 .c-mega-menu__lookbook {
   width: 210px; }
 
+.c-mega-menu__blog {
+  width: 210px; }
+  .c-mega-menu__blog .c-mega-menu__li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.c-mega-menu__blog__sub {
+  width: 285px;
+  top: 15px;
+  left: 170%; }
+
 .c-mega-menu__shop {
-  width: 680px;
+  width: 645px;
   -webkit-transform: translate(-15%, 0);
       -ms-transform: translate(-15%, 0);
           transform: translate(-15%, 0);
@@ -1550,10 +747,10 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 20px 10px; }
+  padding: 20px 20px 0px; }
   .c-mega-menu__shop--left {
     width: 70%;
-    margin-right: 70px; }
+    margin-right: 30px; }
     .c-mega-menu__shop--left div {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1566,7 +763,7 @@ img {
   .c-mega-menu__shop--bottom {
     margin-top: 25px; }
   .c-mega-menu__shop .c-mega-menu__li {
-    padding: 10px 15px 10px 0 !important; }
+    padding: 13px 15px 14px 0 !important; }
 
 .c-mega-menu__dive {
   width: 820px;
@@ -1579,8 +776,8 @@ img {
     display: inline-block;
     vertical-align: top; }
   .c-mega-menu__dive .c-mega-menu__li {
-    padding: 10px 15px 10px 0 !important; }
-  .c-mega-menu__dive--safe-off {
+    padding: 13px 15px 13px 0 !important; }
+  .c-mega-menu__dive--sale-off {
     width: 100% !important;
     margin-top: 15px;
     background-image: url(../images/spritesheet.png);
@@ -1588,7 +785,30 @@ img {
     width: 497px;
     height: 183px;
     background-repeat: no-repeat;
-    background-color: #f8f7f3; }
+    background-color: #f8f7f3;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .c-mega-menu__dive--sale-off::before {
+      content: '';
+      width: 70%;
+      height: 100%; }
+  .c-mega-menu__dive--text-sale {
+    text-align: center;
+    width: 50%; }
+    .c-mega-menu__dive--text-sale p {
+      font-family: "Playfair Display", sans-serif;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    .c-mega-menu__dive--text-sale h3 {
+      font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #000; }
 
 .c-mega-menu__home {
   width: 210px; }
@@ -1598,5 +818,50 @@ img {
 /*
 ==========================================================================
    START MEGA MENU COMPONENT
+==========================================================================
+*/
+/*
+==========================================================================
+   START BUTTON COMPONENT
+==========================================================================
+*/
+.c-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 10px 20px; }
+
+.c-button__shop {
+  border: 1px solid #f06b80;
+  color: #f06b80;
+  background-color: #fff;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear; }
+  .c-button__shop:hover {
+    color: #fff;
+    background-color: #f06b80; }
+
+/*
+==========================================================================
+   END BUTTON COMPONENT
+==========================================================================
+*/
+/*
+==========================================================================
+   START ARROW COMPONENT
+==========================================================================
+*/
+.c-arrow__right {
+  width: 0px;
+  height: 0px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #ef4b69;
+  display: block; }
+
+/*
+==========================================================================
+   END ARROW COMPONENT
 ==========================================================================
 */

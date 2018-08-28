@@ -1,22 +1,20 @@
 /*
 ==========================================================================
-   START FA (FONTAWESOME) COMPONENT
+   START ARROW COMPONENT
 ==========================================================================
 */
 
-.fa {
-    color: $global-color-secondary;
-}
-.c-fa--pink {
-    color: $global-color-primary;
-}
-
-.c-fa--green {
-    color: $global-color-branch;
+.c-arrow__right {
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid $global-color-primary;
+    display: block;
 }
 
 /*
 ==========================================================================
-   END FA (FONTAWESOME) COMPONENT
+   END ARROW COMPONENT
 ==========================================================================
 */

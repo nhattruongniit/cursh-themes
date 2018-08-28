@@ -1,0 +1,30 @@
+/*
+==========================================================================
+   START BUTTON COMPONENT
+==========================================================================
+*/
+
+.c-button {
+    @include font-family('Montserrat');
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.c-button__shop {
+    border: 1px solid #f06b80;
+    color: #f06b80;
+    background-color: #fff;
+    transition: all .3s linear;
+    &:hover {
+        color: #fff;
+        background-color: #f06b80
+    }
+}
+
+/*
+==========================================================================
+   END BUTTON COMPONENT
+==========================================================================
+*/
+

@@ -9,6 +9,7 @@ html {
 body {
     color: inherit;
     height: 100%;
+    color: $global-color-secondary;
 }
 
 ul {
@@ -21,6 +22,6 @@ a {
     color: #686868;
     &:hover {
         text-decoration: none;
-        color: #686868;
+        color: inherit;
     }
 }

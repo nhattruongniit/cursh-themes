@@ -11,8 +11,13 @@
 
 @mixin font-family($locale){
     @if ($locale == 'Montserrat') {
-        font-family: "Montserrat",  Helvetica, Arial, sans-serif;
-    } @else {
-        font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: "Montserrat", sans-serif;
+    }@else if ($locale == 'Playfair') {
+        font-family: "Playfair Display", sans-serif;
+        font-weight: bold;
+    }@else if ($locale == 'OpenSans') {
+        font-family: "Open Sans", sans-serif;
+    }@else {
+        font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 }

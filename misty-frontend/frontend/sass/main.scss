@@ -16,24 +16,14 @@
 // ELEMENTS
 @import "elements/elements.page";
 @import "elements/elements.headings";
-@import "elements/elements.images";
 
 // UTILITIES
-@import "utilities/utilities.text";
-@import "utilities/utilities.cursor";
-@import "utilities/utilities.display";
-@import "utilities/utilities.float";
-@import "utilities/utilities.clearfix";
-@import "utilities/utilities.spacings";
-@import "utilities/utilities.print";
-@import "utilities/utilities.hide";
-@import "utilities/utilities.vertical";
-@import "utilities/utilities.height";
 
 // COMPONENT
 @import "components/_components.header";
 @import "components/_components.footer";
 @import "components/_components.fa";
 @import "components/_components.mega-menu";
-
+@import "components/_components.button";
+@import "components/_components.arrow";
 

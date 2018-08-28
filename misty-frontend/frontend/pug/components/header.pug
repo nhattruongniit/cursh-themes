@@ -28,7 +28,7 @@
                                     i.fa.fa-dollar
                                     span USD
                                     i.fa.fa-angle-down
-                                ul.c-mega-menu.c-mega-menu__currency(style="display:none")
+                                ul.c-mega-menu.c-mega-menu__currency
                                     li.c-mega-menu__li
                                         a(href="#") BRL - Brazilian Real
                                     li.c-mega-menu__li 
@@ -46,7 +46,7 @@
                                     img(src="./images/img-flag-en.jpg", title="Flag EN", alt="Flag EN")
                                     span EN
                                     i.fa.fa-angle-down
-                                ul.c-mega-menu.c-mega-menu__languages(style="display:none")
+                                ul.c-mega-menu.c-mega-menu__languages
                                     li.c-mega-menu__li
                                         a.active(href="#") 
                                             img(src="./images/img-flag-en.jpg", title="Flag EN", alt="Flag EN")
@@ -70,7 +70,7 @@
                                     a(href="#") 
                                         span Home
                                         i.fa.fa-angle-down
-                                    ul.c-mega-menu.c-mega-menu__home.c-mega-menu__sub(style="display:none")
+                                    ul.c-mega-menu.c-mega-menu__home.c-mega-menu__sub
                                         li.c-mega-menu__li
                                             a.active(href="#") Home page v1
                                         li.c-mega-menu__li 
@@ -136,13 +136,16 @@
                                                     a(href="#") Winter 2017
                                                 li.c-mega-menu__li.c-mega-menu__li--noline 
                                                     a(href="#") Sweater of Fall
-                                        li.c-mega-menu__dive--safe-off
-                                            a(href="#") sda
+                                        li.c-mega-menu__dive--sale-off
+                                            div.c-mega-menu__dive--text-sale
+                                                p Welcome To StyleShop
+                                                h3 FLASH SALE OFF 70%
+                                                a.c-button.c-button__shop(href="#") Shop Now
                                 li.c-header__mega__li.c-mega-menu--hover
                                     a(href="#") 
                                         span Shop Page
                                         i.fa.fa-angle-down
-                                    ul.c-mega-menu.c-mega-menu__shop.c-mega-menu__sub(style="display:none")
+                                    ul.c-mega-menu.c-mega-menu__shop.c-mega-menu__sub
                                         li.c-mega-menu__li.c-mega-menu__li--noline.c-mega-menu__shop--left
                                             div
                                                 ul 
@@ -188,15 +191,43 @@
                                                     a(href="#") Register
                                                 li.c-mega-menu__li.c-mega-menu__li--noline 
                                                     a(href="#") 404 Pages
-                                li.c-header__mega__li
+                                li.c-header__mega__li.c-mega-menu--hover
                                     a(href="#") 
                                         span Blog
                                         i.fa.fa-angle-down
+                                    ul.c-mega-menu.c-mega-menu__blog.c-mega-menu__sub
+                                        li.c-mega-menu__li.c-mega-menu--hover
+                                            a(href="#") 
+                                                span Blog Category
+                                                i.c-arrow__right
+                                            ul.c-mega-menu.c-mega-menu__sub.c-mega-menu__blog__sub
+                                                li.c-mega-menu__li
+                                                    a(href="#") Blog List With Left Sidebar
+                                                li.c-mega-menu__li.c-mega-menu__li--noline  
+                                                    a(href="#") Blog List With Right Sidebar
+                                        li.c-mega-menu__li.c-mega-menu--hover
+                                            a(href="#") 
+                                                span Blog Mansory
+                                                i.c-arrow__right
+                                            ul.c-mega-menu.c-mega-menu__sub.c-mega-menu__blog__sub
+                                                li.c-mega-menu__li
+                                                    a(href="#") Blog Mansory With Left Sidebar
+                                                li.c-mega-menu__li.c-mega-menu__li--noline  
+                                                    a(href="#") Blog Mansory With Right Sid
+                                        li.c-mega-menu__li.c-mega-menu--hover.c-mega-menu__li--noline  
+                                            a(href="#") 
+                                                span Blog Detail
+                                                i.c-arrow__right
+                                            ul.c-mega-menu.c-mega-menu__sub.c-mega-menu__blog__sub
+                                                li.c-mega-menu__li
+                                                    a(href="#") Blog Detail With Left Sidebar
+                                                li.c-mega-menu__li.c-mega-menu__li--noline  
+                                                    a(href="#") Blog Detail With Right Sid
                                 li.c-header__mega__li.c-mega-menu--hover
                                     a(href="#") 
                                         span Lookbook
                                         i.fa.fa-angle-down
-                                    ul.c-mega-menu.c-mega-menu__lookbook.c-mega-menu__sub(style="display:none")
+                                    ul.c-mega-menu.c-mega-menu__lookbook.c-mega-menu__sub
                                         li.c-mega-menu__li
                                             a(href="#") Lookbook v1
                                         li.c-mega-menu__li.c-mega-menu__li--noline  
@@ -208,5 +239,10 @@
                             a(href="#")
                                 i.fa.fa-shopping-basket
                                 .c-header__cart--number 3
+                            ul
+                                li
+                                    a(href="#") Lookbook v1
+                                li
+                                    a(href="#") Lookbook v2
 
 

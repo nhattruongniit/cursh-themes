@@ -1,22 +1,14 @@
 /*
 ==========================================================================
-   START FA (FONTAWESOME) COMPONENT
+   START DEVICE 1200
 ==========================================================================
 */
-
-.fa {
-    color: $global-color-secondary;
-}
-.c-fa--pink {
-    color: $global-color-primary;
-}
-
-.c-fa--green {
-    color: $global-color-branch;
-}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%; } }
 
 /*
 ==========================================================================
-   END FA (FONTAWESOME) COMPONENT
+   END DEVICE 1200
 ==========================================================================
 */
