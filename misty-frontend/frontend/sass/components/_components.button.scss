@@ -8,7 +8,23 @@
     @include font-family('Montserrat');
     font-weight: bold;
     border-radius: 30px;
-    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    &::before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &--small {
+        width: 110px;
+        height: 36px;
+    }
+    &--large {
+        width: 160px;
+        height: 46px;
+    }
 }
 
 .c-button__shop {
@@ -16,12 +32,45 @@
     color: #f06b80;
     background-color: #fff;
     transition: all .3s linear;
+    display: inline-block;
+    line-height: 36px;
     &:hover {
         color: #fff;
         background-color: #f06b80
     }
 }
 
+.c-button__most {
+    background-color: #e0514b;
+    span {
+        color: #fff;
+        font-size: 12px;
+        font-weight: normal;
+    }
+    &:hover {
+        background-color: #fff;
+        border: 1px solid #e0514b;
+        span {
+            color: #e0514b;
+        }
+    }
+}
+
+.c-button__default {
+    background-color: #747474;
+    span {
+        color: #fff;
+        font-size: 12px;
+        font-weight: normal;
+    }
+    &:hover {
+        background-color: #fff;
+        border: 1px solid #747474;
+        span {
+            color: #747474;
+        }
+    }
+}
 /*
 ==========================================================================
    END BUTTON COMPONENT

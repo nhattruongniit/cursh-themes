@@ -7,9 +7,9 @@ html {
 }
 
 body {
-    color: inherit;
     height: 100%;
     color: $global-color-secondary;
+    @include font-family('Montserrat');
 }
 
 ul {
@@ -24,4 +24,8 @@ a {
         text-decoration: none;
         color: inherit;
     }
+}
+
+p {
+    margin-bottom: 0;
 }

@@ -1,12 +1,9 @@
-// @font-face {
-//     font-family: 'SFU Eurostile';
-//     src: url('../fonts/SFUEurostileBold.eot');
-//     src: url('../fonts/SFUEurostileBold.eot?#iefix') format('embedded-opentype'),
-//         url('../fonts/SFUEurostileBold.woff2') format('woff2'),
-//         url('../fonts/SFUEurostileBold.woff') format('woff'),
-//         url('../fonts/SFUEurostileBold.ttf') format('truetype'),
-//         url('../fonts/SFUEurostileBold.svg#SFUEurostileBold') format('svg');
-// }
+@font-face {
+    font-family: 'Dancing Script OT';
+    src: url('../fonts/DancingScriptOT.eot');
+    src: url('../fonts/DancingScriptOT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DancingScriptOT.woff') format('woff')
+}
 
 
 @mixin font-family($locale){
@@ -17,6 +14,8 @@
         font-weight: bold;
     }@else if ($locale == 'OpenSans') {
         font-family: "Open Sans", sans-serif;
+    }@else if ($locale == 'DancingScriptOT') {
+        font-family: "Dancing Script OT", sans-serif;
     }@else {
         font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
