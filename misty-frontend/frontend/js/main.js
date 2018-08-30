@@ -1,1 +1,5 @@
-console.log(1);
+$(document).ready(function() {
+    $('.js-cart-slimscroll').slimScroll({
+        height: '370px'
+    });
+})
