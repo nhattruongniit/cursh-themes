@@ -71,6 +71,63 @@
         }
     }
 }
+
+.c-button__slider { 
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #f1d5ba;
+    background-color: rgba(139, 111, 83, 0.4);
+    border-radius: 50%;
+    text-align: center;
+    transition: all .3s linear;
+    &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 1px;
+        height: 100%;
+    }
+    &:hover {
+        .fa {
+            color: $global-color-primary;
+        }
+    }
+    &--next {
+        right: 40px;
+    }
+    &--prev {
+        left: 40px;
+    }
+}
+
+.c-button__slider .fa {
+    transition: all .3s linear;
+    color:#fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.c-button__white {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    color: #fff;
+    transition: all .3s linear;
+    &:hover, &--active {
+        background-color: #fff;
+        color: $global-color-primary;
+    }
+}
+
 /*
 ==========================================================================
    END BUTTON COMPONENT

@@ -1,8 +1,36 @@
 @font-face {
-    font-family: 'Dancing Script OT';
+    font-family: 'DancingScriptOT';
     src: url('../fonts/DancingScriptOT.eot');
     src: url('../fonts/DancingScriptOT.eot?#iefix') format('embedded-opentype'),
         url('../fonts/DancingScriptOT.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'SFUBaskervilleBookItalic';
+    src: url('../fonts/SFUBaskervilleBookItalic.eot');
+    src: url('../fonts/SFUBaskervilleBookItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFUBaskervilleBookItalic.woff') format('woff')
+}
+
+
+@font-face {
+    font-family: 'DancingScriptRegular';
+    src: url('../fonts/DancingScriptRegular.eot');
+    src: url('../fonts/DancingScriptRegular.eot') format('embedded-opentype'),
+         url('../fonts/DancingScriptRegular.woff2') format('woff2'),
+         url('../fonts/DancingScriptRegular.woff') format('woff'),
+         url('../fonts/DancingScriptRegular.ttf') format('truetype'),
+         url('../fonts/DancingScriptRegular.svg#DancingScriptRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'UTMGradoo';
+    src: url('../fonts/UTMGradoo.eot');
+    src: url('../fonts/UTMGradoo.eot') format('embedded-opentype'),
+         url('../fonts/UTMGradoo.woff2') format('woff2'),
+         url('../fonts/UTMGradoo.woff') format('woff'),
+         url('../fonts/UTMGradoo.ttf') format('truetype'),
+         url('../fonts/UTMGradoo.svg#UTMGradoo') format('svg');
 }
 
 
@@ -15,7 +43,13 @@
     }@else if ($locale == 'OpenSans') {
         font-family: "Open Sans", sans-serif;
     }@else if ($locale == 'DancingScriptOT') {
-        font-family: "Dancing Script OT", sans-serif;
+        font-family: "DancingScriptOT", sans-serif;
+    }@else if ($locale == 'DancingScriptRegular') {
+        font-family: "DancingScriptRegular", sans-serif;
+    }@else if ($locale == 'UTMGradoo') {
+        font-family: "UTMGradoo", sans-serif;
+    }@else if ($locale == 'SFUBaskervilleBookItalic') {
+        font-family: "SFUBaskervilleBookItalic", sans-serif;
     }@else {
         font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
