@@ -21,7 +21,7 @@
 
 .c-banner__mouse {
     position:absolute;
-    bottom: 35px;
+    bottom: 12px;
     left:0;
     right:0;
     text-align:center;
@@ -91,31 +91,32 @@
 .c-banner__item__caption {
     position: absolute;
     width: 100%;
-    left: 0;
     z-index: 3;
     text-align: center;
     P {
-        font-family: "DancingScriptOT";
+        @include font-family('DancingScriptOT');
         font-size: 60px;
         transition: all .1s;
         transition-delay: 0s;
         opacity: 0;
-        transform: scale(2);
+        transform: scale(0);
     }
     h1 {
+        @include font-family('Montserrat');
         font-size: 100px;
         text-transform: uppercase;
-        margin: -20px 0 0 0;
+        margin: -20px 0 30px 0;
         transition: all .1s;
         transition-delay: 0s;
         opacity: 0;
-        transform: scale(2);
+        transform: scale(0);
+        
         span {
             color: #afd66e;
         }
     }
     b {
-        font-family: "UTMGradoo";
+        @include font-family('UTMGradoo');
         color: $global-color-primary;
         display: block;
         font-size: 100px;
@@ -123,7 +124,7 @@
         transition: all .1s;
         transition-delay: 0s; 
         opacity: 0;
-        transform: scale(2);
+        transform: scale(0);
     }
     &--slider1 {
         color: #37181c;
@@ -144,12 +145,29 @@
     }
     &--slider3 {
         color: #fff;
-        top: 48%;
+        top: 36%;
         font-weight: normal;
+        display: flex;
+        text-align: left;
         p {
             @include font-family('SFUBaskervilleBookItalic');
-            font-size: 52px;
+            font-size: 41px;
+            text-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
         }
+        h1 {
+            color: $global-color-primary;
+            font-size: 72px;
+            font-weight: bold;
+            margin: 5px 0 30px 0;
+        }
+        &::before {
+            content: '';
+            width: 45%;
+            height: 100%;
+        }
+    }
+    &--slider3-middle {
+        width: 50%;
     }
 }
 

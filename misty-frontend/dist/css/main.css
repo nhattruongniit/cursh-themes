@@ -1094,7 +1094,7 @@ h6 {
 
 .c-banner__mouse {
   position: absolute;
-  bottom: 35px;
+  bottom: 12px;
   left: 0;
   right: 0;
   text-align: center;
@@ -1188,11 +1188,10 @@ h6 {
 .c-banner__item__caption {
   position: absolute;
   width: 100%;
-  left: 0;
   z-index: 3;
   text-align: center; }
   .c-banner__item__caption P {
-    font-family: "DancingScriptOT";
+    font-family: "DancingScriptOT", sans-serif;
     font-size: 60px;
     -webkit-transition: all .1s;
     -o-transition: all .1s;
@@ -1201,13 +1200,14 @@ h6 {
          -o-transition-delay: 0s;
             transition-delay: 0s;
     opacity: 0;
-    -webkit-transform: scale(2);
-        -ms-transform: scale(2);
-            transform: scale(2); }
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0); }
   .c-banner__item__caption h1 {
+    font-family: "Montserrat", sans-serif;
     font-size: 100px;
     text-transform: uppercase;
-    margin: -20px 0 0 0;
+    margin: -20px 0 30px 0;
     -webkit-transition: all .1s;
     -o-transition: all .1s;
     transition: all .1s;
@@ -1215,13 +1215,13 @@ h6 {
          -o-transition-delay: 0s;
             transition-delay: 0s;
     opacity: 0;
-    -webkit-transform: scale(2);
-        -ms-transform: scale(2);
-            transform: scale(2); }
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0); }
     .c-banner__item__caption h1 span {
       color: #afd66e; }
   .c-banner__item__caption b {
-    font-family: "UTMGradoo";
+    font-family: "UTMGradoo", sans-serif;
     color: #ef4b69;
     display: block;
     font-size: 100px;
@@ -1233,9 +1233,9 @@ h6 {
          -o-transition-delay: 0s;
             transition-delay: 0s;
     opacity: 0;
-    -webkit-transform: scale(2);
-        -ms-transform: scale(2);
-            transform: scale(2); }
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0); }
   .c-banner__item__caption--slider1 {
     color: #37181c;
     top: 25%;
@@ -1251,11 +1251,27 @@ h6 {
       font-size: 52px; }
   .c-banner__item__caption--slider3 {
     color: #fff;
-    top: 48%;
-    font-weight: normal; }
+    top: 36%;
+    font-weight: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left; }
     .c-banner__item__caption--slider3 p {
       font-family: "SFUBaskervilleBookItalic", sans-serif;
-      font-size: 52px; }
+      font-size: 41px;
+      text-shadow: 0 0 9px rgba(0, 0, 0, 0.5); }
+    .c-banner__item__caption--slider3 h1 {
+      color: #ef4b69;
+      font-size: 72px;
+      font-weight: bold;
+      margin: 5px 0 30px 0; }
+    .c-banner__item__caption--slider3::before {
+      content: '';
+      width: 45%;
+      height: 100%; }
+  .c-banner__item__caption--slider3-middle {
+    width: 50%; }
 
 .c-banner__item__bg {
   width: 100%;
