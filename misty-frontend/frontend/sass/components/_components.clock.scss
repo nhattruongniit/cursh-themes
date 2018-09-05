@@ -1,0 +1,48 @@
+/*
+==========================================================================
+   START CLOCK COMPONENT
+==========================================================================
+*/
+ 
+
+.c-clock__item {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px dashed #d9bda6;
+    text-align: center;
+    color: #a47645;
+    position: relative;
+    // &::before {
+    //     content: '';
+    //     width: 1px;
+    //     height: 100%;
+    //     display: inline-block;
+    //     vertical-align: middle;
+    // }
+}
+
+.c-clock__times {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.c-clock__times__number {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.c-clock__times__text {
+    font-size: 13px;
+    line-height: 13px;
+}
+
+/*
+==========================================================================
+   END CLOCK COMPONENT
+==========================================================================
+*/
