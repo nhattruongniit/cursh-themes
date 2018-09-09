@@ -1,0 +1,42 @@
+/*
+==========================================================================
+   START ITEM COMPONENT
+==========================================================================
+*/
+
+.c-item {
+    text-align: center;
+}
+
+.c-item__grid {
+    &+& {
+        margin-top: 40px;
+    }
+    &--default {
+        display: flex;
+        justify-content: space-between;
+        .c-item {
+            padding: 0 15px;
+            width: 25%;
+        }
+    }
+}
+
+.c-item__name {
+    margin: 30px 0 10px 0;
+    color: #383838;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.c-item__rating {
+    margin-bottom: 10px;
+}
+
+.grid-sizer{ width: 20%; }
+
+/*
+==========================================================================
+   END ITEM COMPONENT
+==========================================================================
+*/

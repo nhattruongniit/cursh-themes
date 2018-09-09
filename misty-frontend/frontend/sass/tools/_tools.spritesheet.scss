@@ -9,9 +9,10 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
-$bg-zara: (0px, 0px, 0px, 0px, 497px, 183px, 497px, 183px, '../images/spritesheet.png', 'bg-zara', );
-$spritesheet-sprites: ($bg-zara, );
-$spritesheet: (497px, 183px, '../images/spritesheet.png', $spritesheet-sprites, );
+$bg-zara: (0px, 0px, 0px, 0px, 497px, 183px, 497px, 201px, '../images/spritesheet.png', 'bg-zara', );
+$spritesheet-yao: (0px, 183px, 0px, -183px, 147px, 18px, 497px, 201px, '../images/spritesheet.png', 'spritesheet-yao', );
+$spritesheet-sprites: ($bg-zara, $spritesheet-yao, );
+$spritesheet: (497px, 201px, '../images/spritesheet.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //

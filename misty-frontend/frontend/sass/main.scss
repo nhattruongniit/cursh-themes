@@ -19,6 +19,11 @@
 
 // UTILITIES
 
+// OBJECT
+@import "objects/_objects.container";
+@import "objects/_objects.clock";
+@import "objects/_objects.rating";
+
 // COMPONENT
 @import "components/_components.header";
 @import "components/_components.footer";
@@ -29,4 +34,8 @@
 @import "components/_components.cart";
 @import "components/_components.banner";
 @import "components/_components.special";
-@import "components/_components.clock";
+@import "components/_components.filter";
+@import "components/_components.heading";
+@import "components/_components.yield";
+@import "components/_components.item";
+@import "components/_components.price";

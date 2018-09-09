@@ -47,10 +47,10 @@ $(document).ready(function() {
     }
         
     function initializeClock(endtime, clock) {
-        var days = clock.querySelector('.js-countdown__days');
-        var hours = clock.querySelector('.js-countdown__hours');
-        var mins = clock.querySelector('.js-countdown__mins');
-        var secs = clock.querySelector('.js-countdown__secs');
+        var days = clock.querySelector('.js-clock__days');
+        var hours = clock.querySelector('.js-clock__hours');
+        var mins = clock.querySelector('.js-clock__mins');
+        var secs = clock.querySelector('.js-clock__secs');
 
         function updateClock() {
             var t = getTimeRemaining(endtime);
@@ -66,10 +66,28 @@ $(document).ready(function() {
         var timeinterval = setInterval(updateClock, 1000);
     }
       
-    if($('.js-countdown')) {
+    if($('.js-clock')) {
         var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-        $('.js-countdown').each(function(index, el) {
+        $('.js-clock').each(function(index, el) {
             initializeClock(deadline, el);
         });
     }
+
+    /* TODO: grid for component yield ==============*/
+    $('.js-filter > a').on('click', function() {
+        var $filter = $(this).attr('data-filter');
+        $('.js-filter a').removeClass('active');
+        $(this).addClass('active');
+        $('.c-yield__public').hide().removeClass('active');
+        $('.' + $filter).show().addClass('active');
+    })
+
+    var scrollYield = $('.c-yield').offset().top;
+    $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+        if(scrollTop >= scrollYield- 200) {
+            $('.js-yieldAll').addClass('active')
+        }
+    })
+
 })
