@@ -18,6 +18,11 @@
   src: url("../fonts/UTMGradoo.eot");
   src: url("../fonts/UTMGradoo.eot") format("embedded-opentype"), url("../fonts/UTMGradoo.woff2") format("woff2"), url("../fonts/UTMGradoo.woff") format("woff"), url("../fonts/UTMGradoo.ttf") format("truetype"), url("../fonts/UTMGradoo.svg#UTMGradoo") format("svg"); }
 
+@font-face {
+  font-family: 'BentonSansLight';
+  src: url("../fonts/BentonSansLight.eot");
+  src: url("../fonts/BentonSansLight.eot") format("embedded-opentype"), url("../fonts/BentonSansLight.woff2") format("woff2"), url("../fonts/BentonSansLight.woff") format("woff"), url("../fonts/BentonSansLight.ttf") format("truetype"), url("../fonts/BentonSansLight.svg#BentonSansLight") format("svg"); }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -899,7 +904,6 @@ h6 {
       font-weight: bold;
       margin-bottom: 10px; }
     .c-mega-menu__dive--text-sale h3 {
-      font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #000; }
 
 .c-mega-menu__home {
@@ -1562,7 +1566,7 @@ h6 {
 
 .c-heading__yao {
   background-image: url(../images/spritesheet.png);
-  background-position: 0px -183px;
+  background-position: -150px -183px;
   width: 147px;
   height: 18px;
   display: inline-block; }
@@ -1578,7 +1582,8 @@ h6 {
 ==========================================================================
 */
 .c-yield {
-  padding: 100px 0; }
+  padding: 100px 0;
+  position: relative; }
 
 .c-yield__wire {
   margin-top: 40px; }
@@ -1587,15 +1592,57 @@ h6 {
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
   transition: all .3s linear;
+  display: none;
   opacity: 0;
-  -webkit-transform: scale(0, 0);
-      -ms-transform: scale(0, 0);
-          transform: scale(0, 0); }
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center; }
   .c-yield__public.active {
+    -webkit-animation: yield-animate .3s linear forwards;
+            animation: yield-animate .3s linear forwards; }
+
+@-webkit-keyframes yield-animate {
+  0% {
+    opacity: 0;
+    display: none;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0); }
+  50% {
+    opacity: 0;
+    display: none;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0); }
+  100% {
+    display: block;
     opacity: 1;
     -webkit-transform: scale(1, 1);
-        -ms-transform: scale(1, 1);
-            transform: scale(1, 1); }
+            transform: scale(1, 1); } }
+
+@keyframes yield-animate {
+  0% {
+    opacity: 0;
+    display: none;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0); }
+  50% {
+    opacity: 0;
+    display: none;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0); }
+  100% {
+    display: block;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
+
+.c-yield__charBoy {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px -183px;
+  width: 150px;
+  height: 208px;
+  position: absolute;
+  right: 0;
+  bottom: 25px; }
 
 /*
 ==========================================================================
@@ -1633,8 +1680,74 @@ h6 {
 .c-item__rating {
   margin-bottom: 10px; }
 
-.grid-sizer {
-  width: 20%; }
+.c-item__quick {
+  position: relative; }
+  .c-item__quick::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    border: 1px solid #ef4b69;
+    opacity: 0;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+  .c-item__quick::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ef4b69;
+    opacity: 0;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+  .c-item__quick:hover::before {
+    opacity: 1; }
+  .c-item__quick:hover::after {
+    opacity: 0.6; }
+  .c-item__quick:hover .c-item__utils {
+    -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+            transform: scale(1, 1); }
+
+.c-item__sticker {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2; }
+
+.c-item__utils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+  -webkit-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: scale(0, 0);
+      -ms-transform: scale(0, 0);
+          transform: scale(0, 0); }
 
 /*
 ==========================================================================
@@ -1666,5 +1779,65 @@ h6 {
 /*
 ==========================================================================
    END PRICE COMPONENT
+==========================================================================
+*/
+/*
+==========================================================================
+   START STICKER COMPONENT
+==========================================================================
+*/
+.c-sticker {
+  color: #fff;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .c-sticker span {
+    font-family: "BentonSansLight", sans-serif; }
+
+.c-sticker__discount {
+  background-image: url(../images/spritesheet.png);
+  background-position: -150px -201px;
+  width: 45px;
+  height: 45px; }
+
+.c-sticker__new {
+  background-image: url(../images/spritesheet.png);
+  background-position: -195px -201px;
+  width: 45px;
+  height: 45px; }
+
+.c-sticker__utils {
+  position: relative;
+  color: #fff;
+  background-color: #686868;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-decoration: none;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear; }
+  .c-sticker__utils + .c-sticker__utils {
+    margin-left: 10px; }
+  .c-sticker__utils:hover {
+    background-color: #ef4b69; }
+  .c-sticker__utils .fa {
+    color: #fff;
+    position: absolute;
+    top: 47%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
+/*
+==========================================================================
+   END STICKER COMPONENT
 ==========================================================================
 */

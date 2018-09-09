@@ -6,6 +6,7 @@
 
 .c-yield {
     padding: 100px 0;
+    position: relative;
 }
 
 .c-yield__wire {
@@ -17,14 +18,38 @@
 
 .c-yield__public {
     transition: all .3s linear;
+    display: none;
     opacity: 0;
-    transform: scale(0, 0);
+    transform-origin: center center;
     &.active {
+        animation: yield-animate .3s linear forwards;
+    }
+}
+
+@keyframes yield-animate {
+    0% {
+        opacity: 0;
+        display: none;
+        transform: scale(0, 0);
+    }
+    50% {
+        opacity: 0;
+        display: none;
+        transform: scale(0, 0);
+    }
+    100% {
+        display: block;
         opacity: 1;
         transform: scale(1, 1);
     }
 }
 
+.c-yield__charBoy {
+    @include sprite($spritesheet-boy);
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+}
 
 /*
 ==========================================================================

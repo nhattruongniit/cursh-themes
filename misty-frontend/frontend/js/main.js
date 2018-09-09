@@ -85,7 +85,7 @@ $(document).ready(function() {
     var scrollYield = $('.c-yield').offset().top;
     $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
-        if(scrollTop >= scrollYield- 200) {
+        if(scrollTop >= scrollYield - 200) {
             $('.js-yieldAll').addClass('active')
         }
     })

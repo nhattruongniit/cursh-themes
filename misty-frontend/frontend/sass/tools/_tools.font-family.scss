@@ -33,6 +33,16 @@
          url('../fonts/UTMGradoo.svg#UTMGradoo') format('svg');
 }
 
+@font-face {
+    font-family: 'BentonSansLight';
+    src: url('../fonts/BentonSansLight.eot');
+    src: url('../fonts/BentonSansLight.eot') format('embedded-opentype'),
+         url('../fonts/BentonSansLight.woff2') format('woff2'),
+         url('../fonts/BentonSansLight.woff') format('woff'),
+         url('../fonts/BentonSansLight.ttf') format('truetype'),
+         url('../fonts/BentonSansLight.svg#BentonSansLight') format('svg');
+}
+
 
 @mixin font-family($locale){
     @if ($locale == 'Montserrat') {
@@ -50,7 +60,7 @@
         font-family: "UTMGradoo", sans-serif;
     }@else if ($locale == 'SFUBaskervilleBookItalic') {
         font-family: "SFUBaskervilleBookItalic", sans-serif;
-    }@else {
-        font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }@else if ($locale == 'BentonSansLight') {
+        font-family: "BentonSansLight", sans-serif;
     }
 }
