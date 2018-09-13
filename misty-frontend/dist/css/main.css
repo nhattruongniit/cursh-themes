@@ -1352,11 +1352,11 @@ h6 {
   height: 790px;
   display: block; }
   .c-banner__item__bg--img1 {
-    background: url(../images/bg-banner.jpg) 50% 50%/cover padding-box; }
+    background: url(../images/home/bg-banner.jpg) 50% 50%/cover padding-box; }
   .c-banner__item__bg--img2 {
-    background: url(../images/bg-banner2.jpg) 50% 50%/cover padding-box; }
+    background: url(../images/home/bg-banner2.jpg) 50% 50%/cover padding-box; }
   .c-banner__item__bg--img3 {
-    background: url(../images/bg-banner3.jpg) 50% 50%/cover padding-box; }
+    background: url(../images/home/bg-banner3.jpg) 50% 50%/cover padding-box; }
 
 .c-banner__item__people {
   position: absolute;
@@ -1607,11 +1607,21 @@ h6 {
     display: none;
     -webkit-transform: scale(0, 0);
             transform: scale(0, 0); }
+  25% {
+    opacity: 0.5;
+    display: block;
+    -webkit-transform: scale(0.25, 0.25);
+            transform: scale(0.25, 0.25); }
   50% {
-    opacity: 0;
-    display: none;
-    -webkit-transform: scale(0, 0);
-            transform: scale(0, 0); }
+    opacity: 0.7;
+    display: block;
+    -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5); }
+  75% {
+    opacity: 0.7;
+    display: block;
+    -webkit-transform: scale(0.75, 0.75);
+            transform: scale(0.75, 0.75); }
   100% {
     display: block;
     opacity: 1;
@@ -1624,11 +1634,21 @@ h6 {
     display: none;
     -webkit-transform: scale(0, 0);
             transform: scale(0, 0); }
+  25% {
+    opacity: 0.5;
+    display: block;
+    -webkit-transform: scale(0.25, 0.25);
+            transform: scale(0.25, 0.25); }
   50% {
-    opacity: 0;
-    display: none;
-    -webkit-transform: scale(0, 0);
-            transform: scale(0, 0); }
+    opacity: 0.7;
+    display: block;
+    -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5); }
+  75% {
+    opacity: 0.7;
+    display: block;
+    -webkit-transform: scale(0.75, 0.75);
+            transform: scale(0.75, 0.75); }
   100% {
     display: block;
     opacity: 1;
@@ -1839,5 +1859,29 @@ h6 {
 /*
 ==========================================================================
    END STICKER COMPONENT
+==========================================================================
+*/
+/*
+==========================================================================
+   START FALL COMPONENT
+==========================================================================
+*/
+.c-fall {
+  width: 100%;
+  height: 300px;
+  background: url(../images/home/bg-fall.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative; }
+
+.c-fall__piboy {
+  position: absolute;
+  left: 0;
+  top: -30px;
+  z-index: 1;
+  max-width: 500px; }
+
+/*
+==========================================================================
+   END FALL COMPONENT
 ==========================================================================
 */

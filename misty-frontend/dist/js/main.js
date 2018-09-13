@@ -78,8 +78,16 @@ $(document).ready(function() {
         var $filter = $(this).attr('data-filter');
         $('.js-filter a').removeClass('active');
         $(this).addClass('active');
-        $('.c-yield__public').removeAttr('style');
         $('.c-yield__public').hide().removeClass('active');
         $('.' + $filter).show().addClass('active');
     })
+
+    var scrollYield = $('.c-yield').offset().top;
+    $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+        if(scrollTop >= scrollYield - 200) {
+            $('.js-yieldAll').addClass('active')
+        }
+    })
+
 })
