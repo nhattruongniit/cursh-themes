@@ -10,6 +10,7 @@ h1 {
 
 h2 {
     @include font-size($global-font-size-h2);
+    margin-bottom: 0;
 }
 
 h3 {

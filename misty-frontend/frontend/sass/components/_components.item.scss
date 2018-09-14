@@ -6,6 +6,8 @@
 
 .c-item {
     text-align: center;
+    padding:0 15px;
+    margin: 30px 0;
 }
 
 .c-item__grid {
@@ -14,9 +16,9 @@
     }
     &--default {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         .c-item {
-            padding: 0 15px;
             width: 25%;
         }
     }

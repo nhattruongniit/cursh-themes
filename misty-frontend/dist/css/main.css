@@ -528,7 +528,8 @@ h1 {
 h2 {
   font-size: 28px;
   font-size: 1.75rem;
-  line-height: 1.71429; }
+  line-height: 1.71429;
+  margin-bottom: 0; }
 
 h3 {
   font-size: 24px;
@@ -920,17 +921,19 @@ h6 {
 ==========================================================================
 */
 .c-button {
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   border-radius: 30px;
   text-align: center;
-  display: inline-block; }
-  .c-button::before {
-    content: '';
-    width: 1px;
-    height: 100%;
-    display: inline-block;
-    vertical-align: middle; }
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .c-button--small {
     width: 110px;
     height: 36px; }
@@ -1017,7 +1020,6 @@ h6 {
   border: 1px solid #fff;
   width: 150px;
   height: 45px;
-  text-align: center;
   color: #fff;
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
@@ -1364,6 +1366,14 @@ h6 {
   top: 0;
   z-index: 2; }
 
+.c-banner__item__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 /*
 ==========================================================================
    END BANNER COMPONENT
@@ -1655,15 +1665,6 @@ h6 {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1); } }
 
-.c-yield__charBoy {
-  background-image: url(../images/spritesheet.png);
-  background-position: 0px -183px;
-  width: 150px;
-  height: 208px;
-  position: absolute;
-  right: 0;
-  bottom: 25px; }
-
 /*
 ==========================================================================
    END YIELD COMPONENT
@@ -1675,7 +1676,9 @@ h6 {
 ==========================================================================
 */
 .c-item {
-  text-align: center; }
+  text-align: center;
+  padding: 0 15px;
+  margin: 30px 0; }
 
 .c-item__grid + .c-item__grid {
   margin-top: 40px; }
@@ -1684,11 +1687,12 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .c-item__grid--default .c-item {
-    padding: 0 15px;
     width: 25%; }
 
 .c-item__name {
@@ -1871,7 +1875,13 @@ h6 {
   height: 300px;
   background: url(../images/home/bg-fall.jpg) no-repeat center center;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .c-fall__piboy {
   position: absolute;
@@ -1879,6 +1889,34 @@ h6 {
   top: -30px;
   z-index: 1;
   max-width: 500px; }
+
+.c-fall__content {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2; }
+
+.c-fall__content__title {
+  font-family: "DancingScriptRegular", sans-serif;
+  font-size: 36px;
+  color: #ffe400;
+  display: block; }
+
+.c-fall__content__lead {
+  margin: -10px 0 0 0;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px; }
+
+.c-fall__charBoy {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px -183px;
+  width: 150px;
+  height: 208px;
+  position: absolute;
+  right: 0;
+  top: -200px; }
 
 /*
 ==========================================================================

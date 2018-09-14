@@ -82,12 +82,4 @@ $(document).ready(function() {
         $('.' + $filter).show().addClass('active');
     })
 
-    var scrollYield = $('.c-yield').offset().top;
-    $(window).scroll(function() {
-        var scrollTop = $(window).scrollTop();
-        if(scrollTop >= scrollYield - 200) {
-            $('.js-yieldAll').addClass('active')
-        }
-    })
-
 })
