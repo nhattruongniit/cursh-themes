@@ -78,8 +78,14 @@ $(document).ready(function() {
         var $filter = $(this).attr('data-filter');
         $('.js-filter a').removeClass('active');
         $(this).addClass('active');
-        $('.c-yield__public').hide().removeClass('active');
+        $(this).parents('.c-yield__stage').find($('.c-yield__public')).hide().removeClass('active');
         $('.' + $filter).show().addClass('active');
     })
-
+    $('.js-filterFeature > a').on('click', function() {
+        var $filter = $(this).attr('data-filter');
+        $('.js-filterFeature a').removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('.c-yield__stageFeature').find($('.c-yield__public')).hide().removeClass('active');
+        $('.' + $filter).show().addClass('active');
+    })
 })
