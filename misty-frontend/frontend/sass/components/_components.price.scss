@@ -4,21 +4,14 @@
 ==========================================================================
 */
 
-.c-price {
-    &--small {
-        .c-price__default {
-            font-size: 14px;
-        }
-        .c-price__off {
-            font-size: 14px;
-        }
-    }
-}
-
-.c-price__default {
+.c-price__fix {
     @include font-family('DancingScriptRegular');
     font-size: 36px;
     color: $global-color-primary;
+
+    &--small {
+        font-size: 18px;
+    }
 }
 
 .c-price__off {
@@ -26,6 +19,10 @@
     font-size: 24px;
     display: inline-block;
     margin-left: 15px;
+
+    &--small {
+        font-size: 14px;
+    }
 }
 
 /*

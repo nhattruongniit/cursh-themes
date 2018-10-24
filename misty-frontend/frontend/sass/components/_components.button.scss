@@ -9,16 +9,16 @@
     border-radius: 30px;
     text-align: center;
     font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     &--small {
         width: 110px;
         height: 36px;
+        line-height: 36px;
     }
     &--large {
         width: 160px;
         height: 46px;
+        line-height: 46px;
     }
 }
 
@@ -114,6 +114,7 @@
     border: 1px solid #fff;
     width: 150px;
     height: 45px;
+    line-height: 40px;
     color: #fff;
     transition: all .3s linear;
     &:hover, &--active {
@@ -121,6 +122,20 @@
         color: $global-color-primary;
     }
 }
+
+
+.c-button__collection {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 150px;
+    height: 45px;
+    line-height: 40px;
+    color: #012d1f;
+    background-color: #fff;
+    transition: all .3s linear;
+}
+
 
 /*
 ==========================================================================

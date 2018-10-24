@@ -65,7 +65,7 @@
 .c-banner__item {
     position: relative;
     &.slick-current {
-        .c-banner__item__caption {
+        .c-banner__caption {
             p {
                 transform: scale(1);
                 opacity: 1;
@@ -89,7 +89,7 @@
     }
 }
 
-.c-banner__item__caption {
+.c-banner__caption {
     position: absolute;
     width: 100%;
     z-index: 3;
@@ -173,7 +173,7 @@
 }
 
 
-.c-banner__item__bg {
+.c-banner__bg {
     width: 100%;
     height: 790px;
     display: block;
@@ -188,18 +188,12 @@
     }
 }
 
-.c-banner__item__people {
+.c-banner__people {
     position: absolute;
     right: 70px;
     top: 0;
     z-index: 2;
 }
-
-.c-banner__item__button {
-    display: flex;
-    justify-content: center;
-}
-
 
 /*
 ==========================================================================
