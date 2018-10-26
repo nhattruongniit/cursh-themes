@@ -96,13 +96,15 @@ $(document).ready(function() {
     })
 
     /* TODO: back to top ===========*/
-    $('.js-baby').on('click', function() {
-        $('html, body').animate({ scrollTop: 0 }, 1000);
-    });
-    $('.js-baby').mouseover(function() {
-        $(this).addClass('bounce');
-    });
-    $('.js-baby').mouseout(function() {
-        $(this).removeClass('bounce');
+    $('.js-baby').on({
+        "mouseover": function() {
+            $(this).addClass('bounce');
+        },
+        "mouseout": function() {
+            $(this).removeClass('bounce');
+        },
+        "click": function() {
+            $('html, body').animate({ scrollTop: 0 }, 1000);
+        }
     })
 })

@@ -12,27 +12,27 @@ block content
             .c-banner__item
                 img.c-banner__people(src="./images/home/img-people.png", title="People", alt="People")
                 .c-banner__bg.c-banner__bg--img1
-                .c-banner__caption.c-banner__caption--slider1
-                    p Fashion Boy
-                    h1 AUTUMN WINTER
-                    b 2017/18
-                    div.c-banner__button
+                .c-banner__caption.c-banner__caption--middle
+                    .c-banner__title Fashion Boy
+                    h1.c-banner__heading AUTUMN WINTER
+                    .c-banner__lead 2017/18
+                    .c-banner__button
                         a.c-button.c-button__white Shop Now
             .c-banner__item
                 .c-banner__bg.c-banner__bg--img2
-                .c-banner__caption.c-banner__caption--slider2
-                    p Welcome To StyleShop
-                    h1 FLASH SALE OFF <span>70%</span>
-                    div.c-banner__button
-                        a.c-button.c-button__white.c-button__white--active Shop Now
+                .c-banner__caption.c-banner__caption--bottom
+                    .c-banner__title.c-banner__title--secondary Welcome To StyleShop
+                    h1.c-banner__heading.c-banner__heading--secondary FLASH SALE OFF 
+                        span.c-banner__discount 70%
+                    .c-banner__button
+                        a.c-button.c-button__white Shop Now
             .c-banner__item
                 .c-banner__bg.c-banner__bg--img3
-                .c-banner__caption.c-banner__caption--slider3
-                    .c-banner__caption--slider3-middle
-                        p SALE 50% OFF
-                        h1 END OF SEASON
-                        div.c-banner__button
-                            a.c-button.c-button__white Shop Now
+                .c-banner__caption.c-banner__caption--right
+                    .c-banner__title.c-banner__title--season SALE 50% OFF
+                    h1.c-banner__heading.c-banner__heading--season END OF SEASON
+                    .c-banner__button
+                        a.c-button.c-button__white Shop Now
 
     .c-special
         .container.js-special
@@ -59,20 +59,21 @@ block content
                     .o-clock.js-clock
                         .o-clock__item
                             .o-clock__times
-                                .o-clock__times__number.js-clock__days
-                                .o-clock__times__text Days
+                                .o-clock__number.js-clock__days
+                                .o-clock__text Days
                         .o-clock__item
                             .o-clock__times
-                                .o-clock__times__number.js-clock__hours
-                                .o-clock__times__text Hrs
+                                .o-clock__number.js-clock__hours
+                                .o-clock__text Hrs
                         .o-clock__item
                             .o-clock__times
-                                .o-clock__times__number.js-clock__mins
-                                .o-clock__times__text Mins
+                                .o-clock__number.js-clock__mins
+                                .o-clock__text Mins
                         .o-clock__item
                             .o-clock__times
-                                .o-clock__times__number.js-clock__secs
-                                .o-clock__times__text Secs
+                                .o-clock__number.js-clock__secs
+                                .o-clock__text Secs
+
             .c-special__item
                 .c-special__img
                     img(src="./images/img-discount2.jpg", title="Product", alt="Product")
@@ -96,20 +97,20 @@ block content
                     .o-clock.js-clock
                         .o-clock__item
                             .o-clock__times
-                                .o-clock__times__number.js-clock__days
-                                .o-clock__times__text Days
+                                .o-clock__number.js-clock__days
+                                .o-clock__text Days
                         .o-clock__item
                             .o-clock__times
-                                .o-clock__times__number.js-clock__hours
-                                .o-clock__times__text Hrs
+                                .o-clock__number.js-clock__hours
+                                .o-clock__text Hrs
                         .o-clock__item
                             .o-clock__times
-                                .o-clock__times__number.js-clock__mins
-                                .o-clock__times__text Mins
+                                .o-clock__number.js-clock__mins
+                                .o-clock__text Mins
                         .o-clock__item
                             .o-clock__times
-                                .o-clock__times__number.js-clock__secs
-                                .o-clock__times__text Secs
+                                .o-clock__number.js-clock__secs
+                                .o-clock__text Secs
 
     section.c-yield
         .container
@@ -117,7 +118,6 @@ block content
                 .c-heading__lead Kid Fashion
                 .c-heading__title All The Best For Your Kids
                 .c-heading__yao
-            
             .c-filter.c-filter--center.js-filter
                 a.c-filter__link.active(href="javascript:;", data-filter="js-yieldAllTop") All
                 a.c-filter__link(href="javascript:;", data-filter="js-yieldNew") New Products
@@ -677,7 +677,7 @@ block content
                 .c-fall__content__title
                     h2 Baby Store Baby Shopping
                 .c-fall__content__lead FALL 10% OFF
-                a(href="#").c-button.c-button__white.c-button__white--active View Lookbook
+                a(href="#").c-button.c-button__white View Lookbook
 
     section.c-yield
         .container
@@ -2148,12 +2148,17 @@ block content
         .c-collection__content
             .c-collection__lead Kids Simple
             .c-collection__title Goat Collection
-        a(href="").c-button.c-button__collection Shop Now
+        a.c-button.c-button__secondary(href="") Shop Now
     
     section.c-news
         .container
             h1.c-heading.c-heading--center
                 .c-heading__title The Latest News
                 .c-heading__yao
-   
-
+    
+    section.c-subscribe
+        .o-container.o-container--small
+            h3.c-subscribe__heading Sign up to get the latest on sales, new releases and more
+            form.c-subscribe__form(action="#", method="POST")
+                input.c-input(type='text', name='emal', placeholder='Enter your e-mail')
+                button.c-button.c-button__primary(type='submit') Subscribe

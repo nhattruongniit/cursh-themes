@@ -5,65 +5,76 @@
 */
 
 .c-button {
-    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+    display: inline-block;
+    border: 0;
     border-radius: 30px;
+    outline: 0;
+    font-size: 12px;
     text-align: center;
-    font-size: 15px;
-    display: inline-block;
-    &--small {
-        width: 110px;
-        height: 36px;
-        line-height: 36px;
-    }
-    &--large {
-        width: 160px;
-        height: 46px;
-        line-height: 46px;
+    width: 160px;
+    height: 46px;
+    line-height: 46px;
+}
+
+.c-button__view {
+    background-color: rgb(224, 81, 75);
+    border: 1px solid rgb(224, 81, 75);
+    color: #fff;
+
+    &:hover {
+        background-color: transparent;
+        color: rgb(224, 81, 75);
     }
 }
 
-.c-button__shop {
-    border: 1px solid #f06b80;
-    color: #f06b80;
+.c-button__gray {
+    background-color: $global-color-secondary;
+    border: 1px solid $global-color-secondary;
+    color: #fff;
+
+    &:hover {
+        background-color: transparent;
+        color: $global-color-secondary;
+    }
+}
+
+.c-button__primary {
+    background-color: $global-color-primary;
+    border: 1px solid $global-color-primary;
+    color: #fff;
+    font-size: 16px;
+
+    &:hover {
+        background-color: transparent;
+        color: $global-color-primary;
+    }
+}
+
+.c-button__secondary {
     background-color: #fff;
-    transition: all .3s linear;
-    display: inline-block;
-    line-height: 36px;
+    border: 1px solid #fff;
+    color: $global-color-secondary;
+    font-size: 16px;
+
     &:hover {
+        background-color: transparent;
+
         color: #fff;
-        background-color: #f06b80
     }
 }
 
-.c-button__most {
-    background-color: #e0514b;
-    span {
-        color: #fff;
-        font-size: 12px;
-        font-weight: normal;
-    }
-    &:hover {
-        background-color: #fff;
-        border: 1px solid #e0514b;
-        span {
-            color: #e0514b;
-        }
-    }
-}
+.c-button__white {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: $global-color-primary;
+    font-size: 16px;
+    font-weight: normal;
 
-.c-button__default {
-    background-color: #747474;
-    span {
-        color: #fff;
-        font-size: 12px;
-        font-weight: normal;
-    }
     &:hover {
-        background-color: #fff;
-        border: 1px solid #747474;
-        span {
-            color: #747474;
-        }
+        background-color: transparent;
+        color: #fff;
     }
 }
 
@@ -106,36 +117,6 @@
     display: inline-block;
     vertical-align: middle;
 }
-
-
-.c-button__white {
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid #fff;
-    width: 150px;
-    height: 45px;
-    line-height: 40px;
-    color: #fff;
-    transition: all .3s linear;
-    &:hover, &--active {
-        background-color: #fff;
-        color: $global-color-primary;
-    }
-}
-
-
-.c-button__collection {
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid #fff;
-    width: 150px;
-    height: 45px;
-    line-height: 40px;
-    color: #012d1f;
-    background-color: #fff;
-    transition: all .3s linear;
-}
-
 
 /*
 ==========================================================================

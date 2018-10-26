@@ -22,13 +22,19 @@
 
 .c-map__text {
     cursor: pointer;
+    transition: all .3s;
+    display: flex;
+    justify-items: center;
 
+    &:hover {
+        color: $global-color-primary
+    }
 }
 
 .c-map__text  .fa {
     font-size: 30px;
-    margin-right: 10px;
     margin-top: -3px;
+    margin-right: 10px;
 }
 
 
@@ -57,18 +63,6 @@
 }
 
 .c-map__form {
-    input {
-        width: 100%;
-        height: 40px;
-        margin-bottom: 10px;
-        border: 1px solid #eae9e9;
-        outline: none;
-        padding: 20px 15px;
-        font-size: 13px;
-        color: #898989;
-        font-weight: 300;
-        border-radius: 5px;
-    }
     textarea {
         width: 100%;
         height: 130px;
@@ -99,7 +93,7 @@
 .c-map__baby {
     position: absolute;
     right: 30px;
-    top: -18px;
+    top: -21px;
     z-index: 90;
     cursor: pointer;
 }
