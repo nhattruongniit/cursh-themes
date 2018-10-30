@@ -15,7 +15,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .c-banner__mouse {
@@ -91,6 +91,36 @@
     
 }
 
+.c-banner__slider {
+    .owl-item.active {
+        .c-banner__title {
+            transform: scale(1);
+            opacity: 1;
+            transition: all .3s;
+            transition-delay: .2s;
+        }
+        .c-banner__heading {
+            transform: scale(1);
+            opacity: 1;
+            transition: all .3s;
+            transition-delay: .4s;
+        }
+        .c-banner__lead {
+            transform: scale(1);
+            opacity: 1;
+            transition: all .3s;
+            transition-delay: .6s;
+        }
+    }
+}
+
+.c-banner__effect {
+    transition: all .1s;
+    transition-delay: 0;
+    opacity: 0;
+    transform: scale(0);
+}
+
 .c-banner__title {
     @include font-family('DancingScriptOT');
     color: #37181c;
@@ -144,7 +174,6 @@
     color: #afd66e;
 }
 
-
 .c-banner__bg {
     width: 100%;
     height: 790px;
@@ -164,6 +193,7 @@
 }
 
 .c-banner__people {
+    width: auto !important;
     position: absolute;
     right: 70px;
     top: 0;

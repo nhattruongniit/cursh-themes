@@ -9,12 +9,17 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$bg-shape: (150px, 183px, -150px, -183px, 94px, 83px, 497px, 391px, '../images/spritesheet.png', 'bg-shape', );
 $bg-zara: (0px, 0px, 0px, 0px, 497px, 183px, 497px, 391px, '../images/spritesheet.png', 'bg-zara', );
+$img-flag-en: (423px, 183px, -423px, -183px, 22px, 13px, 497px, 391px, '../images/spritesheet.png', 'img-flag-en', );
+$img-flag-france: (379px, 183px, -379px, -183px, 22px, 15px, 497px, 391px, '../images/spritesheet.png', 'img-flag-france', );
+$img-flag-germany: (401px, 183px, -401px, -183px, 22px, 15px, 497px, 391px, '../images/spritesheet.png', 'img-flag-germany', );
+$img-flag-russia: (445px, 183px, -445px, -183px, 22px, 13px, 497px, 391px, '../images/spritesheet.png', 'img-flag-russia', );
 $spritesheet-boy: (0px, 183px, 0px, -183px, 150px, 208px, 497px, 391px, '../images/spritesheet.png', 'spritesheet-boy', );
-$spritesheet-discount: (150px, 201px, -150px, -201px, 45px, 45px, 497px, 391px, '../images/spritesheet.png', 'spritesheet-discount', );
-$spritesheet-new: (195px, 201px, -195px, -201px, 45px, 45px, 497px, 391px, '../images/spritesheet.png', 'spritesheet-new', );
-$spritesheet-yao: (150px, 183px, -150px, -183px, 147px, 18px, 497px, 391px, '../images/spritesheet.png', 'spritesheet-yao', );
-$spritesheet-sprites: ($bg-zara, $spritesheet-boy, $spritesheet-discount, $spritesheet-new, $spritesheet-yao, );
+$spritesheet-discount: (232px, 201px, -232px, -201px, 45px, 45px, 497px, 391px, '../images/spritesheet.png', 'spritesheet-discount', );
+$spritesheet-new: (277px, 201px, -277px, -201px, 45px, 45px, 497px, 391px, '../images/spritesheet.png', 'spritesheet-new', );
+$spritesheet-yao: (232px, 183px, -232px, -183px, 147px, 18px, 497px, 391px, '../images/spritesheet.png', 'spritesheet-yao', );
+$spritesheet-sprites: ($bg-shape, $bg-zara, $img-flag-en, $img-flag-france, $img-flag-germany, $img-flag-russia, $spritesheet-boy, $spritesheet-discount, $spritesheet-new, $spritesheet-yao, );
 $spritesheet: (497px, 391px, '../images/spritesheet.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables

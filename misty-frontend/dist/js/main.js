@@ -8,27 +8,28 @@ $(document).ready(function() {
 
     /* TODO: slider banner ==================*/
     if($('.js-banner')) {
-        $('.js-banner').slick({
-            dots: false,
+        $(".js-banner").owlCarousel({
+            items: 1,
             autoplay: false,
-            autoplaySpeed: 5000,
-            pauseOnFocus: false,
-            pauseOnHover: false,
-            prevArrow: '<div class="c-button__slider c-button__slider--prev"><i class="fa fa-long-arrow-left"></i></div>',
-            nextArrow: '<div class="c-button__slider c-button__slider--next"><i class="fa fa-long-arrow-right"></i></div>'
+            smartSpeed: 1000,
+            nav: true,
+            navText: ['<div class="c-button__slider c-button__slider--prev"><i class="fa fa-long-arrow-left"></i></div>', '<div class="c-button__slider c-button__slider--next"><i class="fa fa-long-arrow-right"></i></div>'],
+            loop: true,
+            dots: false,
         });
-    }
+    };
 
     if($('.js-special')) {
-        $('.js-special').slick({
-            dots: true,
-            arrows: false,
+        $('.js-special').owlCarousel({
+            items: 1,
             autoplay: false,
-            autoplaySpeed: 5000,
-            pauseOnFocus: false,
-            pauseOnHover: false,
-        });
-    }
+            smartSpeed: 1000,
+            nav: true,
+            navText: ['<i class="fa fa-long-arrow-left"></i>', '<i class="fa fa-long-arrow-right"></i>'],
+            loop: false,
+            dots: true,
+        })
+    };
 
     /* TODO: countdown for component clock ==============*/
     function getTimeRemaining(endtime) {
@@ -44,7 +45,7 @@ $(document).ready(function() {
             'minutes': minutes,
             'seconds': seconds
         };
-    }
+    };
         
     function initializeClock(endtime, clock) {
         var days = clock.querySelector('.js-clock__days');
@@ -64,14 +65,14 @@ $(document).ready(function() {
         }
         updateClock();
         var timeinterval = setInterval(updateClock, 1000);
-    }
+    };
       
     if($('.js-clock')) {
         var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
         $('.js-clock').each(function(index, el) {
             initializeClock(deadline, el);
         });
-    }
+    };
 
     /* TODO: grid for component yield ==============*/
     $('.js-filter > a').on('click', function() {
@@ -80,20 +81,21 @@ $(document).ready(function() {
         $(this).addClass('active');
         $(this).parents('.js-filter').siblings().find($('.c-yield__public')).hide().removeClass('active');
         $('.' + $filter).show().addClass('active');
-    })
+    });
+
     $('.js-filterFeature > a').on('click', function() {
         var $filter = $(this).attr('data-filter');
         $('.js-filterFeature a').removeClass('active');
         $(this).addClass('active');
         $(this).parents('.js-filterFeature').siblings().find($('.c-yield__public')).hide().removeClass('active');
         $('.' + $filter).show().addClass('active');
-    })
+    });
 
     /* TODO: show map footer ============*/
     $('.js-map').on('click', function() {
         $('.c-map__content').slideToggle(450);
         $('html, body').animate({ scrollTop: $(document).height() }, 1000);
-    })
+    });
 
     /* TODO: back to top ===========*/
     $('.js-baby').on({
@@ -106,5 +108,36 @@ $(document).ready(function() {
         "click": function() {
             $('html, body').animate({ scrollTop: 0 }, 1000);
         }
-    })
+    });
+
+    /* TODO: slideshow thumbs on index =========*/
+    if($('.js-thumbs')) {
+        $('.js-thumbs').owlCarousel({
+            items: 7,
+            autoplay: true,
+            nav: false,
+            loop: true,
+            smartSpeed: 1000,
+            margin: 0,
+            dots: false,
+            responsive:{
+                300:{
+                    items:1,
+                },
+                480:{
+                    items:2,
+                },
+                768:{
+                    items:3
+                },
+                992:{
+                    items:5
+                },
+                1200:{
+                    items:6
+                }
+            }
+        })
+    };
+
 })

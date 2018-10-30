@@ -6,51 +6,73 @@
 
 .c-special {
     width: 100%;
-    padding-top: 100px;
-    .slick-dots {
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-        &::before {
-            content: '\f177';
-            display: inline-block;
-            color: rgba(0, 0, 0, 0.3);
-            display: inline-block;
-            font: normal normal normal 24px/1 FontAwesome;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-            margin: -2px 15px 0 0;
-        }
-        &::after {
-            content: '\f178';
-            display: inline-block;
-            color: rgba(0, 0, 0, 0.3);
-            display: inline-block;
-            font: normal normal normal 24px/1 FontAwesome;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-            margin: -2px 0px 0 15px;
-        }
-        li {
+    padding: 100px 0 80px 0;
+    background-color: #fbfbfa;
+
+    .owl-controls {
+        display: table;
+        margin: 70px auto 0;
+        position: relative;
+    }
+
+    .owl-dots {
+        text-align: center;
+    }
+
+    .owl-dot {
+        display: inline-block;
+        span {
             display: block;
             width: 10px;
             height: 10px;
             margin: 5px;
-            border: 3px solid $global-color-branch;
+            border: 3px solid #62bd00;
             background-color: rgba(0, 0, 0, 0.07);
-            border-radius: 5px;
-            &.slick-active {
-                background-color: $global-color-branch;
-            }
+            border-radius: 50%;
         }
-        li button {
-            text-indent: -9999px;
-            outline: 0;
-            border: 0;
-            background-color: #fff;
-            margin: 0;
-            padding: 0;
+        &.active span {
+            background-color: #62bd00;
         }
+    }
+
+    .owl-prev, .owl-next {
+        position: absolute;
+        bottom: 4px;
+        text-align: center;
+        transition: all 0.3s;
+        border-radius: 50%;
+    }
+
+    .owl-prev {
+        right: calc(100% + 10px);
+    }
+
+    .owl-next {
+        left: calc(100% + 10px);
+    }
+
+}
+
+.c-special__arrow {
+    &--left {
+        content: '\f177';
+        display: inline-block;
+        color: rgba(0, 0, 0, 0.3);
+        display: inline-block;
+        font: normal normal normal 24px/1 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        margin: -2px 15px 0 0;
+    }
+    &--right {
+        content: '\f178';
+        display: inline-block;
+        color: rgba(0, 0, 0, 0.3);
+        display: inline-block;
+        font: normal normal normal 24px/1 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        margin: -2px 0px 0 15px;
     }
 }
 
@@ -78,7 +100,7 @@
         left: 27.3%;
         bottom: 25px;
         z-index: 8;
-        background-color: #fff;
+        background-color: #fbfbfa;
     }
 }
 
@@ -100,7 +122,7 @@
     position: absolute;
     right: 0;
     bottom: 40px;
-    background: #fff;
+    background: #fbfbfa;
     padding: 40px 0;
     z-index: 10;
 }

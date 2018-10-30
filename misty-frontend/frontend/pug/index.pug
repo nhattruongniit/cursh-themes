@@ -13,26 +13,26 @@ block content
                 img.c-banner__people(src="./images/home/img-people.png", title="People", alt="People")
                 .c-banner__bg.c-banner__bg--img1
                 .c-banner__caption.c-banner__caption--middle
-                    .c-banner__title Fashion Boy
-                    h1.c-banner__heading AUTUMN WINTER
-                    .c-banner__lead 2017/18
+                    .c-banner__effect.c-banner__title Fashion Boy
+                    h1.c-banner__effect.c-banner__heading AUTUMN WINTER
+                    .c-banner__effect.c-banner__lead 2017/18
                     .c-banner__button
-                        a.c-button.c-button__white Shop Now
+                        a(href="#").c-button.c-button__white Shop Now
             .c-banner__item
                 .c-banner__bg.c-banner__bg--img2
                 .c-banner__caption.c-banner__caption--bottom
-                    .c-banner__title.c-banner__title--secondary Welcome To StyleShop
-                    h1.c-banner__heading.c-banner__heading--secondary FLASH SALE OFF 
+                    .c-banner__effect.c-banner__title.c-banner__title--secondary Welcome To StyleShop
+                    h1.c-banner__effect.c-banner__heading.c-banner__heading--secondary FLASH SALE OFF 
                         span.c-banner__discount 70%
                     .c-banner__button
-                        a.c-button.c-button__white Shop Now
+                        a(href="#").c-button.c-button__white Shop Now
             .c-banner__item
                 .c-banner__bg.c-banner__bg--img3
                 .c-banner__caption.c-banner__caption--right
-                    .c-banner__title.c-banner__title--season SALE 50% OFF
-                    h1.c-banner__heading.c-banner__heading--season END OF SEASON
+                    .c-banner__effect.c-banner__title.c-banner__title--season SALE 50% OFF
+                    h1.c-banner__effect.c-banner__heading.c-banner__heading--season END OF SEASON
                     .c-banner__button
-                        a.c-button.c-button__white Shop Now
+                        a(href="#").c-button.c-button__white Shop Now
 
     .c-special
         .container.js-special
@@ -2142,9 +2142,11 @@ block content
                                 i.fa.fa-star-o
                             .c-price
                                 span.c-price__fix.c-price__fix--small $45.00
-                                del.c-price__off.c-prc-button c-button__whiteice__off--small $100.00
+                                del.c-price__off.c-price__off--small $100.00
                                 
     .c-collection
+        //- img.c-collection__car(src="../images/home/img-car.png", title="Collection Boy", alt="Boy")
+        img.c-collection__img(src="../images/home/img-boy.png", title="Collection Boy", alt="Boy")
         .c-collection__content
             .c-collection__lead Kids Simple
             .c-collection__title Goat Collection
@@ -2155,7 +2157,132 @@ block content
             h1.c-heading.c-heading--center
                 .c-heading__title The Latest News
                 .c-heading__yao
+            .c-news__content
+                .c-news__box
+                    .c-news__image
+                        a(href="#")
+                            img(src="../images/home/img-news-girl.jpg", title="News", alt="News")
+                    .c-news__related
+                        .c-news__date 
+                            .c-news__date--day 9 
+                            .c-news__date--months Dec
+                        .c-news__details
+                            .c-news__lead
+                                .c-news__lead__tick Fashion Kid
+                                ul.c-news__lead__ul
+                                    li 
+                                        i.fa.fa-heart-o
+                                        span.c-news__lead__number 10
+                                    li 
+                                        i.fa.fa-comment-o 
+                                        span.c-news__lead__number 10
+                            h2.c-news__heading 
+                                a.c-news__heading__link(href="#") Summer fever: The top trends inpried by street style
+                            .c-news__description What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language.
+                .c-news__box
+                    .c-news__image
+                        a(href="#")
+                            img(src="../images/home/img-news-three.jpg", title="News", alt="News")
+                    .c-news__related
+                        .c-news__date 
+                            .c-news__date--day 9 
+                            .c-news__date--months Dec
+                        .c-news__details
+                            .c-news__lead
+                                .c-news__lead__tick Fashion Kid
+                                ul.c-news__lead__ul
+                                    li 
+                                        i.fa.fa-heart-o
+                                        span.c-news__lead__number 10
+                                    li 
+                                        i.fa.fa-comment-o 
+                                        span.c-news__lead__number 10
+                            h2.c-news__heading 
+                                a.c-news__heading__link(href="#") Summer fever: The top trends inpried by street style
+                            .c-news__description What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language.
     
+    .c-thumbs.js-thumbs
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-1.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-2.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-3.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-4.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-5.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-6.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-7.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+        .c-thumbs__item
+            img(src="./images/home/image-thumbs-3.jpg", title="", alt="")
+            .c-thumbs__box
+                .c-thumbs__box__content
+                    .c-thumbs__box__follow FOLLOW US
+                    .c-thumbs__box__instagram
+                        i.fa.fa-instagram.c-thumbs__box__fa
+                        span Instagram
+                    .c-thumbs__box__description Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                    a.c-thumbs__box__button(href="#") follow
+
     section.c-subscribe
         .o-container.o-container--small
             h3.c-subscribe__heading Sign up to get the latest on sales, new releases and more
