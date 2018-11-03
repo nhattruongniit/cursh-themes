@@ -857,7 +857,7 @@ h6 {
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  z-index: 2;
+  z-index: 3;
   opacity: 0;
   visibility: hidden;
   background-color: #fff;
@@ -960,12 +960,7 @@ h6 {
   .c-mega-menu__dive--sale-off {
     width: 100% !important;
     margin-top: 15px;
-    background-image: url(../images/spritesheet.png);
-    background-position: 0px 0px;
-    width: 497px;
-    height: 183px;
-    background-repeat: no-repeat;
-    background-color: #f8f7f3;
+    background: #f8f7f3 url(../images/bg-zara.png) no-repeat left top;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -974,7 +969,8 @@ h6 {
             justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding: 30px 0; }
     .c-mega-menu__dive--sale-off::before {
       content: '';
       width: 70%;
@@ -1228,7 +1224,7 @@ h6 {
   position: relative; }
 
 .c-banner__waves {
-  background: url(../images/img-wave.png) repeat-x left top;
+  background: url(../images/bg-wave.png) repeat-x left top;
   width: 100%;
   height: 7px;
   position: absolute;
@@ -1630,7 +1626,7 @@ h6 {
 
 .c-heading__yao {
   background-image: url(../images/spritesheet.png);
-  background-position: -232px -183px;
+  background-position: -82px -239px;
   width: 147px;
   height: 18px;
   display: inline-block; }
@@ -1879,13 +1875,13 @@ h6 {
 
 .c-sticker__discount {
   background-image: url(../images/spritesheet.png);
-  background-position: -232px -201px;
+  background-position: -82px -257px;
   width: 45px;
   height: 45px; }
 
 .c-sticker__new {
   background-image: url(../images/spritesheet.png);
-  background-position: -277px -201px;
+  background-position: -127px -257px;
   width: 45px;
   height: 45px; }
 
@@ -1963,10 +1959,6 @@ h6 {
   font-size: 60px; }
 
 .c-fall__charBoy {
-  background-image: url(../images/spritesheet.png);
-  background-position: 0px -183px;
-  width: 150px;
-  height: 208px;
   position: absolute;
   right: 0;
   top: -200px; }
@@ -2049,12 +2041,13 @@ h6 {
 
 .c-news__date {
   background-image: url(../images/spritesheet.png);
-  background-position: -150px -183px;
-  width: 94px;
+  background-position: 0px -239px;
+  width: 82px;
   height: 83px;
   text-align: center;
   padding: 15px;
-  font-size: 18px; }
+  font-size: 18px;
+  width: 94px; }
   .c-news__date--day {
     color: #613200;
     font-weight: bold;
@@ -2366,8 +2359,210 @@ h6 {
    START SLOGAN COMPONENT
 ==========================================================================
 */
+.c-slogan {
+  margin: 80px 0;
+  position: relative; }
+
+.c-slogan__quote {
+  margin-top: 85px; }
+
+.c-slogan__box {
+  background: #d69f55 url(../images/home/bg-slogan.png) no-repeat right bottom;
+  padding: 0 60px;
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+  background-size: auto 100%;
+  padding-top: 0;
+  margin-bottom: 50px; }
+  .c-slogan__box::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 100%;
+    right: 0;
+    margin: auto;
+    width: 20px;
+    height: 10px;
+    background: #fff;
+    border: 7px solid #fff;
+    border-top: 7px solid #d69f55;
+    border-left: 13px solid #d69f55; }
+
+.c-slogan__image {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.c-slogan__description {
+  text-align: center;
+  height: 100%; }
+
+.c-slogan__name {
+  font-size: 12px;
+  color: #6e6e6e;
+  margin-top: 10px;
+  text-transform: uppercase; }
+
+.c-slogan__speaker {
+  height: 100%; }
+  .c-slogan__speaker::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle; }
+
+.c-slogan__speaker__content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 98%;
+  margin-top: 20px; }
+
+.c-slogan__speaker__text {
+  font-size: 14px;
+  color: #2b2b2b;
+  margin-bottom: 20px; }
+
+.c-slogan__speaker__name {
+  color: #2b2b2b;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.c-slogan__speaker__position {
+  color: #ac9455;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.c-slogan__thumbs__item {
+  display: inline-block !important;
+  vertical-align: middle;
+  float: none; }
+  .c-slogan__thumbs__item img {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+  .c-slogan__thumbs__item.slick-current img {
+    width: 113px; }
+  .c-slogan__thumbs__item.slick-current .c-slogan__name {
+    display: none; }
+
+.c-slogan__thumbs .slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 5;
+  text-indent: -9999px;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer; }
+
+.c-slogan__thumbs .slick-prev {
+  width: 0px;
+  height: 0px;
+  left: 0;
+  border-top: 10px solid transparent;
+  border-right: 17px solid #d1d1d1;
+  border-bottom: 10px solid transparent; }
+
+.c-slogan__thumbs .slick-next {
+  width: 0px;
+  height: 0px;
+  right: 0;
+  border-top: 10px solid transparent;
+  border-left: 17px solid #d1d1d1;
+  border-bottom: 10px solid transparent; }
+
 /*
 ==========================================================================
    END SLOGAN COMPONENT
+==========================================================================
+*/
+/*
+==========================================================================
+   START GRATEFUL COMPONENT
+==========================================================================
+*/
+.c-grateful {
+  background: url(../images/home/bg-grateful.jpg) no-repeat center center;
+  width: 100%;
+  padding: 113px 0;
+  position: relative; }
+
+.c-grateful__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: center; }
+
+.c-grateful__bg--1 {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px -120px;
+  width: 136px;
+  height: 119px; }
+
+.c-grateful__bg--2 {
+  background-image: url(../images/spritesheet.png);
+  background-position: -136px 0px;
+  width: 136px;
+  height: 120px; }
+
+.c-grateful__bg--3 {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px 0px;
+  width: 136px;
+  height: 120px; }
+
+.c-grateful__bg--4 {
+  background-image: url(../images/spritesheet.png);
+  background-position: -136px -120px;
+  width: 136px;
+  height: 112px; }
+
+.c-grateful__bg--5 {
+  background-image: url(../images/spritesheet.png);
+  background-position: -272px -107px;
+  width: 136px;
+  height: 117px; }
+
+.c-grateful__bg--6 {
+  background-image: url(../images/spritesheet.png);
+  background-position: -272px 0px;
+  width: 149px;
+  height: 107px; }
+
+.c-grateful__img {
+  position: absolute;
+  z-index: 2; }
+
+.c-grateful__light {
+  background: url(../images/home/bg-light.png) no-repeat center center;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animate: light 5s linear infinite alternate; }
+
+@-webkit-keyframes light {}
+
+@keyframes light {}/*
+==========================================================================
+   END GRATEFUL COMPONENT
 ==========================================================================
 */

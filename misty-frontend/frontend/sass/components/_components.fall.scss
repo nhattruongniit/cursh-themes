@@ -45,7 +45,7 @@
 }
 
 .c-fall__charBoy {
-    @include sprite($spritesheet-boy);
+    // @include sprite($spritesheet-boy);
     position: absolute;
     right: 0;
     top: -200px;

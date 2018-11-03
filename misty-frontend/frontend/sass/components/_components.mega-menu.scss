@@ -9,7 +9,7 @@
     top: 30px;
     left: 50%;
     transform: translate(-50%, 0);
-    z-index: 2;
+    z-index: 3;
     opacity: 0;
     visibility: hidden;
     background-color: #fff;
@@ -25,20 +25,6 @@
             visibility: visible;
         }
     }
-}
-
-.c-mega-menu__sub {
-    // font-weight: normal;
-    // padding: 10px 20px 10px;
-    // font-size: 14px;
-    // .c-mega-menu__li {
-    //     border-bottom: 1px solid #f5f5f5;
-    //     padding: 13px 10px;
-    //     color: #686868;
-    //     &--noline {
-    //         border-bottom: 0;
-    //     }
-    // }
 }
 
 .c-mega-menu__li {
@@ -136,12 +122,11 @@
         }
         width: 100% !important;
         margin-top: 15px;
-        @include sprite($bg-zara);
-        background-repeat: no-repeat;
-        background-color: #f8f7f3;
+        background: #f8f7f3 url(../images/bg-zara.png) no-repeat left top ;
         display: flex !important;
         justify-content: space-evenly;
         align-items: center;
+        padding: 30px 0;
     }
     &--text-sale {
         text-align: center;

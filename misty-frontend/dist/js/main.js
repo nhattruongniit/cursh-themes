@@ -140,4 +140,21 @@ $(document).ready(function() {
         })
     };
 
+    /* TODO: slideshow slogan on index =================*/
+    $('.js-slogan__description').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.js-slogan__thumbs',
+        autoplay: false,
+    });
+    $('.js-slogan__thumbs').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.js-slogan__description',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
+    });
+
 })

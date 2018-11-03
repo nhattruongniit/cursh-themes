@@ -1,0 +1,66 @@
+/*
+==========================================================================
+   START GRATEFUL COMPONENT
+==========================================================================
+*/
+
+.c-grateful {
+    background: url(../images/home/bg-grateful.jpg) no-repeat center center;
+    width: 100%;
+    padding: 113px 0;
+    position: relative;
+}
+
+.c-grateful__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.c-grateful__bg {
+    &--1 {
+        @include sprite($bg-grateful-1);
+    }
+    &--2 {
+        @include sprite($bg-grateful-2);
+    }
+    &--3 {
+        @include sprite($bg-grateful-3);
+    }
+    &--4 {
+        @include sprite($bg-grateful-4);
+    }
+    &--5 {
+        @include sprite($bg-grateful-5);
+    }
+    &--6 {
+        @include sprite($bg-grateful-6);
+    }
+}
+
+.c-grateful__img {
+    position: absolute;
+    z-index: 2;
+}
+
+.c-grateful__light {
+    background: url(../images/home/bg-light.png) no-repeat center center;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animate: light 5s linear infinite alternate;
+}
+
+@keyframes light {
+    
+}
+
+/*
+==========================================================================
+   END GRATEFUL COMPONENT
+==========================================================================
+*/
