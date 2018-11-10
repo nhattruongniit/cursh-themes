@@ -3,7 +3,6 @@
    START PRICE COMPONENT
 ==========================================================================
 */
-
 .c-price__fix {
     @include font-family('DancingScriptRegular');
     font-size: 36px;
@@ -12,6 +11,8 @@
     &--small {
         font-size: 18px;
     }
+
+    
 }
 
 .c-price__off {
