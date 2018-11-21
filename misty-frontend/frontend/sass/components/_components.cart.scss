@@ -8,7 +8,7 @@
     width: 385px;
     position: absolute;
     top: 30px;
-    right: -235%;
+    right: -150%;
     z-index: 4;
     opacity: 0;
     visibility: hidden;
@@ -101,6 +101,12 @@
 .c-cart__wishlist {
     right: 50%;
     transform:translate(50%, 0);
+}
+
+@media (max-width: 1200px) {
+    .c-cart{
+        right: 0;
+    }
 }
 
 

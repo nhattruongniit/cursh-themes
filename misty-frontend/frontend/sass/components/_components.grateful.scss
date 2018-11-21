@@ -8,7 +8,6 @@
     background: url(../images/home/bg-grateful.jpg) no-repeat center center;
     width: 100%;
     padding: 113px 0;
-    position: relative;
 }
 
 .c-grateful__content {
@@ -16,25 +15,26 @@
     align-items: center;
     justify-content: space-between;
     justify-items: center;
+    position: relative;
 }
 
 .c-grateful__bg {
-    &--1 {
+    &--ever {
         @include sprite($bg-grateful-1);
     }
-    &--2 {
+    &--happy {
         @include sprite($bg-grateful-2);
     }
-    &--3 {
+    &--thank {
         @include sprite($bg-grateful-3);
     }
-    &--4 {
+    &--mom {
         @include sprite($bg-grateful-4);
     }
-    &--5 {
+    &--love {
         @include sprite($bg-grateful-5);
     }
-    &--6 {
+    &--best {
         @include sprite($bg-grateful-6);
     }
 }
@@ -45,18 +45,40 @@
 }
 
 .c-grateful__light {
-    background: url(../images/home/bg-light.png) no-repeat center center;
+    background: url(../images/home/img-light.png) no-repeat center center;
     position: absolute;
     z-index: 2;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    // animate: light 5s linear infinite alternate;
+    width: 47px;
+    height: 46px;
+
+    &--left {
+        animation: light .8s ease-in-out infinite alternate;
+    }
+
+    &--half {
+        top: 73px;
+        left: 26%;
+        animation: light .7s ease-in-out infinite alternate;
+    }
+
+    &--middle {
+        top: 17px;
+        left: 62%;
+        animation: light 1s ease-in-out infinite alternate;
+    }
+
+    &--right {
+        top: 28px;
+        left: 95%;
+        animation: light .7s ease-in-out infinite alternate;
+    }
 }
 
 @keyframes light {  
-    
+    from { opacity: 0;}
+    to {opacity: 1;}
 }
 
 /*
