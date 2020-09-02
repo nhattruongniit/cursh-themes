@@ -14,88 +14,50 @@ function plumberError(error) {
 }
 
 
-/*
-| SPRITESMITH tasks
-|--------------------------------------------------------------------------
-*/
-gulp.task('spritesmith', function () {
-    return gulp.src('./frontend/spritesmith/*.png')
-        .pipe(spritesmith({
-            imgName: 'spritesheet.png',
-            cssName: '_tools.spritesheet.scss',
-            imgPath: '../images/spritesheet.png',
-            cssTemplate: 'node_modules/gulp.spritesmith/docs/handlebarsInheritance.scss.handlebars'
-        }))
-        .pipe(gulpif('spritesheet.png', gulp.dest('./dist/images/')))
-        .pipe(gulpif('_tools.spritesheet.scss', gulp.dest('./frontend/sass/tools/')))
-})
+function pugScript() {
+    return  gulp.src('./frontend/pug/**/*.pug')
+            .pipe(pug({
+                pretty: true
+            }))
+            .pipe(gulp.dest('./dist/'))
+            .pipe(browserSync.stream())
+}
 
-/*
-| JS tasks
-|--------------------------------------------------------------------------
-*/
-gulp.task('js-code', function() {
-    return gulp.src('./frontend/js/*.js')
-        .pipe(gulp.dest('./dist/js/'));
-})
+function sassScript() {
+    return  gulp.src('./frontend/sass/**/*.scss')
+            .pipe(plumber({
+                errorHandler: plumberError
+            }))
+            .pipe(sass().on('error', sass.logError))
+            .pipe(autoprefixer({
+                browsers: ['last 5 versions']
+            }))
+            .pipe(gulp.dest('./dist/css/'))
+            .pipe(browserSync.stream());
+}
 
-gulp.task('js-watch', function() {
-    gulp.watch('./frontend/js/*.js', ['js-code', reload])
-})
+function jsScript() {
+    return  gulp.src('./frontend/js/*.js')
+            .pipe(gulp.dest('./dist/js/'));
+}
 
-gulp.task('js', ['js-code', 'js-watch'])
 
-/*
-| PUG tasks
-|--------------------------------------------------------------------------
-*/
-gulp.task('pug-code', function() {
-    gulp.src('./frontend/pug/**/*.pug')
-        .pipe(pug({
-            pretty: true
-        }))
-        .pipe(gulp.dest('./dist/'))
-        .pipe(browserSync.stream())
-});
+function watch() {
+    gulp.watch('./frontend/pug/**/*.pug', pugScript);
+    gulp.watch('./frontend/sass/**/*.scss', sassScript);
+    gulp.watch('./frontend/js/*.scss', jsScript)
+}
 
-gulp.task('pug-watch', function() {
-    gulp.watch('./frontend/pug/**/*.pug', ['pug-code', reload])
-})
-
-gulp.task('pug', ['pug-code', 'pug-watch'])
-
-/*
-| CSS tasks
-|--------------------------------------------------------------------------
-*/
-gulp.task('sass-code', function() {
-    return gulp.src('./frontend/sass/**/*.scss')
-        .pipe(plumber({
-            errorHandler: plumberError
-        }))
-        .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer({
-            browsers: ['last 5 versions']
-        }))
-        .pipe(gulp.dest('./dist/css/'))
-        .pipe(browserSync.stream());
-});
-
-gulp.task('sass-watch', function() {
-    gulp.watch('./frontend/sass/**/*.scss', ['sass-code', reload])
-})
-
-gulp.task('sass', ['sass-code', 'sass-watch'])
-
-/*
-| Other tasks
-|--------------------------------------------------------------------------
-*/
-
-gulp.task('serve', ['js', 'sass', 'pug'], function() {
+function defaultTask(cb) {
+    // place code for your default task here
+    cb();
+    watch()
     browserSync.init({
         server: {
             baseDir: "./dist/"
         }
     })
-})
+}
+
+  
+exports.default = defaultTask;
