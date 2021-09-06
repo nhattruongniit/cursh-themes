@@ -1,0 +1,20 @@
+{
+  "name": "kelis-organic-food",
+  "version": "1.0.0",
+  "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
+  "main": "index.js",
+  "scripts": {
+    "serve": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nhattruongniit@bitbucket.org/crushthemes/kelis-organic-food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/crushthemes/kelis-organic-food#readme",
+  "dependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1"
+  }
+}
